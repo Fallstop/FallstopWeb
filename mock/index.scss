@@ -1,0 +1,111 @@
+$text-color: rgb(245, 245, 245);
+$background-image: url(img/landingBackground-desat.JPG);
+
+:root {
+    font-family: "Open Sans", sans-serif;
+}
+html {
+    height: 100%;
+    background: $background-image no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h1,
+h2,
+h3 {
+    font-family: "Josefin Sans", sans-serif;
+}
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+.landingContainer {
+    height: 100vh;
+    width: 100vw;
+}
+.infoContainer {
+    position: absolute;
+    width: 100vw;
+
+    /* if backdrop support: very transparent and blurred */
+    @supports (backdrop-filter: blur(2em) brightness(80%)) {
+        backdrop-filter: blur(2em) brightness(80%);
+    }
+    @supports not (backdrop-filter: blur(2em) brightness(80%)) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), $background-image;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+.horizontalRule {
+    margin: 0;
+    padding: 0;
+    border: 2px solid $text-color;
+}
+
+body {
+    color: $text-color;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.title {
+    font-size: 8vw;
+    margin-bottom: 1vw;
+}
+.subtitle {
+    margin-top: 0;
+    font-size: 2rem;
+    font-size: 4vw;
+}
+.header {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    font-size: 10rem;
+}
+
+.content {
+    margin-left: 2rem;
+}
+.projectsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .projectBox {
+        margin: 4em;
+        width: 20em;
+        height: 10em;
+        background: rgb(36, 36, 36);
+        border: 5px solid white;
+        border-radius: 20px;
+        padding: 1em;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .projectTitle {
+            font-family: "Josefin Sans", sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}
+
+.skillsContainer {
+    
+    
+}
+ul {
+    -moz-column-count: 4;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-count: 4;
+    column-gap: 20px;
+}
