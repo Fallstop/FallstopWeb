@@ -38,10 +38,9 @@ p {
 
 @supports not ((-webkit-backdrop-filter: blur(2em) brightness(80%)) or (backdrop-filter: blur(2em) brightness(80%))) {
   .infoContainer {
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(img/landingBackground-desat.JPG);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/landingBackground-desat.JPG);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(img/landingBackground-desat.JPG) no-repeat center center fixed;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/landingBackground-desat.JPG) no-repeat center center fixed;
     background-size: cover;
-    background-attachment: fixed;
   }
 }
 
@@ -78,7 +77,32 @@ body {
   margin-left: 2rem;
 }
 
-.projectsContainer {
+.projectsContainer .projectSeeMore {
+  margin: 4em;
+  text-align: center;
+}
+
+.projectsContainer .projectSeeMore a {
+  display: inline-block;
+  font-size: 5rem;
+  font-style: normal;
+  text-decoration: none;
+  color: whitesmoke;
+  border: #ffffff solid 3px;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.3em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.projectsContainer .projectSeeMore a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.projectsContainer .projectsFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,11 +113,11 @@ body {
       flex-wrap: wrap;
 }
 
-.projectsContainer .projectBox {
+.projectsContainer .projectsFlex .projectBox {
   margin: 4em;
   width: 20em;
   height: 10em;
-  background: #242424;
+  background: rgba(0, 0, 0, 0.5);
   border: 5px solid white;
   border-radius: 20px;
   padding: 1em;
@@ -108,11 +132,47 @@ body {
           align-items: center;
 }
 
-.projectsContainer .projectBox .projectTitle {
+.projectsContainer .projectsFlex .projectBox .projectTitle {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 2rem;
   text-align: center;
+}
+
+.skillsContainer {
+  margin-bottom: 2em;
+}
+
+.skillsContainer .skillClass {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skillsContainer .skillItem {
+  margin: 1em;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border: whitesmoke solid 3px;
+  border-radius: 1rem;
+}
+
+.skillsContainer .skillItem .skillName {
+  font-size: 1.4rem;
+}
+
+.skillsContainer .skillItem .skillSummary {
+  font-style: italic;
+  color: #bdbdbd;
 }
 /*# sourceMappingURL=index.css.map */
