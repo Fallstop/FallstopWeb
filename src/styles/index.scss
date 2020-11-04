@@ -1,0 +1,173 @@
+$text-color: rgb(245, 245, 245);
+$background-image: url(../assets/image/landingBackground-desat.jpg);
+// $background-image: #ffffff;
+
+:root {
+    font-family: "Open Sans", sans-serif;
+}
+html {
+    height: 100%;
+    background: $background-image no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+h1,
+h2,
+h3 {
+    font-family: "Josefin Sans", sans-serif;
+}
+p {
+    font-family: "Open Sans", sans-serif;
+}
+
+.landingContainer {
+    height: 100vh;
+    width: 100vw;
+    .revealContainer {
+        text-decoration: none;
+        color: $text-color;
+        position: absolute;
+        right: 1em;
+        bottom: 1em;
+        font-size: 2rem;
+        border-radius: 1rem;
+        border: #ffffff solid 3px;
+        padding: 1rem;
+        svg {
+            top: 0.15em;
+            width: 3rem;
+            position: relative;
+        }
+        transition: all 0.2s ease-in-out;
+    }
+    .revealContainer:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        
+    }
+}
+.infoContainer {
+    position: absolute;
+    width: 100vw;
+
+    /* if backdrop support: very transparent and blurred */
+    @supports (backdrop-filter: blur(2em) brightness(80%)) {
+        backdrop-filter: blur(2em) brightness(80%);
+    }
+    @supports not (backdrop-filter: blur(2em) brightness(80%)) {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        $background-image no-repeat center center fixed;
+        background-size: cover;
+    }
+}
+.horizontalRule {
+    margin: 0;
+    padding: 0;
+    border: 2px solid $text-color;
+}
+
+body {
+    color: $text-color;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.title {
+    font-size: 8vw;
+    margin-bottom: 1vw;
+}
+.subtitle {
+    margin-top: 0;
+    font-size: 2rem;
+    font-size: 4vw;
+}
+.header {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    font-size: 10rem;
+}
+
+.content {
+    margin-left: 2rem;
+}
+.projectsContainer {
+    .projectSeeMore {
+        a {
+            display: inline-block;
+            
+            font-size: 5rem;
+            font-style: normal;
+            text-decoration: none;
+            color: $text-color;
+            border: transparent;
+            border-radius: 1rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 0.3em;
+            transition: all 0.2s ease-in-out;
+        }
+        a:hover {
+            
+            transform: scale(1.1);
+            background-color: rgba(255,255,255,0.1);
+        }
+        
+        margin: 4em;
+        text-align: center;
+    }
+    .projectsFlex {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .projectBox {
+            margin: 4em;
+            width: 20em;
+            height: 10em;
+            background: rgba(0, 0, 0, 0.5);
+            border: 5px solid white;
+            border-radius: 20px;
+            padding: 1em;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .projectTitle {
+                font-family: "Josefin Sans", sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.skillsContainer {
+    margin-bottom: 2em;
+
+    .skillClass {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .skillItem {
+        margin: 1em;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 1rem;
+        border: rgb(245, 245, 245) solid 3px;
+        border-radius: 1rem;
+        max-width: 40%;
+        min-width: 10em;
+        .skillName {
+            font-size: 1.4rem;
+        }
+        .skillSummary {
+            font-style: italic;
+            color: rgb(189, 189, 189);
+        }
+    }
+}
