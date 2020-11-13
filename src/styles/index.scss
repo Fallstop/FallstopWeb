@@ -1,5 +1,5 @@
 $text-color: rgb(245, 245, 245);
-$background-image: url(../assets/image/landingBackground-desat.jpg);
+// $background-image: url(../assets/image/landingBackground-desat.jpg);
 // $background-image: #ffffff;
 
 :root {
@@ -7,7 +7,7 @@ $background-image: url(../assets/image/landingBackground-desat.jpg);
 }
 html {
     height: 100%;
-    background: $background-image no-repeat center center fixed;
+    // background: $background-image no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -57,8 +57,8 @@ p {
         backdrop-filter: blur(2em) brightness(80%);
     }
     @supports not (backdrop-filter: blur(2em) brightness(80%)) {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        $background-image no-repeat center center fixed;
+        // background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        // $background-image no-repeat center center fixed;
         background-size: cover;
     }
 }

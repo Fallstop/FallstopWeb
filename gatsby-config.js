@@ -8,6 +8,9 @@ module.exports = {
   /* Your site config here */
   plugins: [
     "gatsby-image",
+    "gatsby-background-image",
+    "styled-components",
+    "styled-media-query",
     {
       resolve: "gatsby-plugin-sass",
       options: {
