@@ -1,7 +1,8 @@
 import React from 'react';
 
-export const InfoContainer = () =>  (
-    <div class="infoContainer">
+const InfoContainer = () =>  {
+    return (
+	<div class="infoContainer">
 				<div class="content">
 					<h2 class="header">Projects</h2>
 
@@ -149,5 +150,6 @@ export const InfoContainer = () =>  (
 						</div>
 					</div>
 				</div>
-			</div>
-);
+			</div>)
+};
+export default InfoContainer;

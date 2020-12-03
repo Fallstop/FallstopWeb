@@ -45,6 +45,7 @@ const BackgroundSection = ({ className, children }) => {
           backgroundColor={`#040e18`}
           // Title get's passed to both container and noscriptImg.
           title="gbitest"
+          
           // style={{
           //   // Defaults are overwrite-able by setting one of the following:
           //   // backgroundSize: '',
@@ -70,10 +71,11 @@ const BackgroundSection = ({ className, children }) => {
 }
 
 const StyledBackgroundSection = styled(BackgroundSection)`
-  height: 100%;
+position: absolute !important;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   
   // These three crucial styles (if existing) are directly parsed and added to 
   // the pseudo-elements without further ado (except when overwritten).
