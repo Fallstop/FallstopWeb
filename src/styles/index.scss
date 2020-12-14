@@ -2,8 +2,21 @@ $text-color: rgb(245, 245, 245);
 // $background-image: url(../assets/image/landingBackground-desat.jpg);
 // $background-image: #ffffff;
 
+$blured-background-image: url(../assets/image/landingBackground-blurV2.jpg);
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
 :root {
     font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 html {
     height: 100%;
@@ -26,6 +39,7 @@ p {
 .landingContainer {
     height: 100vh;
     width: 100vw;
+
     .revealContainer {
         text-decoration: none;
         color: $text-color;
@@ -45,21 +59,27 @@ p {
     }
     .revealContainer:hover {
         background-color: rgba(0, 0, 0, 0.5);
-        
     }
 }
 .infoContainer {
     position: absolute;
     width: 100vw;
 
-    /* if backdrop support: very transparent and blurred */
-    @supports (backdrop-filter: blur(2em) brightness(80%)) {
-        backdrop-filter: blur(2em) brightness(80%);
-    }
-    @supports not (backdrop-filter: blur(2em) brightness(80%)) {
-        // background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        // $background-image no-repeat center center fixed;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $blured-background-image no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
+        
+        z-index: -1;
+        filter: blur(20px);
     }
 }
 .horizontalRule {
@@ -96,7 +116,7 @@ body {
     .projectSeeMore {
         a {
             display: inline-block;
-            
+
             font-size: 5rem;
             font-style: normal;
             text-decoration: none;
@@ -108,11 +128,10 @@ body {
             transition: all 0.2s ease-in-out;
         }
         a:hover {
-            
             transform: scale(1.1);
-            background-color: rgba(255,255,255,0.1);
+            background-color: rgba(255, 255, 255, 0.1);
         }
-        
+
         margin: 4em;
         text-align: center;
     }

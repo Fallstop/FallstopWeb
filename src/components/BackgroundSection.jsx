@@ -71,7 +71,7 @@ const BackgroundSection = ({ className, children }) => {
 }
 
 const StyledBackgroundSection = styled(BackgroundSection)`
-position: absolute !important;
+// position: absolute !important;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;

@@ -31,12 +31,12 @@ const horizontalRule = (
 export default function Home() {
 	return (
 		<div className="home">
-			{Header}
+			
 			<StyledBackgroundSection>
 				{landingContainer}
 				{horizontalRule}
-				<InfoContainer/>
 			</StyledBackgroundSection>
+			<InfoContainer/>
 			
 
 		</div>
