@@ -10,14 +10,14 @@ import StyledBackgroundSection from "../components/BackgroundSection"
 
 const landingContainer = (
 	<div className="landingContainer">
-		<div class="content">
-			<h1 class="title">Jasper M-W</h1>
-			<p class="subtitle">Not a bot</p>
+		<div className="content">
+			<h1 className="title">Jasper M-W</h1>
+			<p className="subtitle">Not a bot</p>
 		</div>
-		<a class="revealContainer" href="#section2">
+		<a className="revealContainer" href="#section2">
 			<span>See More</span>
-			<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-				<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+			<svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
 			</svg>
 		</a>
 	</div>
@@ -25,7 +25,7 @@ const landingContainer = (
 
 
 const horizontalRule = (
-	<hr class="horizontalRule" id="section2" />
+	<hr className="horizontalRule" id="section2" />
 )
 
 export default function Home() {

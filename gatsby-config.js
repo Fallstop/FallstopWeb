@@ -25,7 +25,16 @@ module.exports = {
       },
     },
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://jasper.qrl.nz',
+        sitemap: 'https://jasper.qrl.nz/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
+
   ],
   pathPrefix: "/",
 }
