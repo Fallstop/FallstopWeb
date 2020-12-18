@@ -30,7 +30,7 @@ const horizontalRule = (
 
 export default function Home() {
 	return (
-		<div className="home">
+		<div className="landingPage">
 			
 			<StyledBackgroundSection>
 				{landingContainer}

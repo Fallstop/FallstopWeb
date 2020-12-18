@@ -1,0 +1,26 @@
+$text-color: rgb(245, 245, 245);
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+:root {
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: $text-color;
+    overflow-x: hidden;
+    margin: 0;
+}

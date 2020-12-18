@@ -77,6 +77,7 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-attachment: fixed;
   background-size: cover;
   
+  
   // These three crucial styles (if existing) are directly parsed and added to 
   // the pseudo-elements without further ado (except when overwritten).
   //background-repeat: repeat-y;

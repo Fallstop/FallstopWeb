@@ -7,8 +7,8 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
+    <div className="project-container">
+      <div className="project-title">
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
         <div
