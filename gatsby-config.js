@@ -33,7 +33,15 @@ module.exports = {
         sitemap: 'https://jasper.qrl.nz/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    }
+    },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/_content/projects`,
+        name: `markdown-pages`,
+      },
+    },
 
   ],
   pathPrefix: "/",

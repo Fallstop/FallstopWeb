@@ -1,0 +1,123 @@
+{
+    "sectors": [
+        {
+            "title": "Languages",
+            "content": [
+                {
+                    "name": "All things Python",
+                    "description": "Python is an interpreted, high-level and general-purpose programming language."
+                },
+                {
+                    "name": "Rust",
+                    "description": "Rust is a multi-paradigm programming language focused on performance and safety."
+                },
+                {
+                    "name": "Unity C# game development",
+                    "description": "Unity is a cross-platform game engine developed by Unity Technologies."
+                },
+                {
+                    "name": "Arduino C++ prototyping",
+                    "description": "Open-source electronic prototyping platform enabling users to create interactive electronic objects. "
+                },
+                {
+                    "name": "HTML/CSS/SCSS/JS",
+                    "description": "The fundamental web languages."
+                },
+                {
+                    "name": "Dart",
+                    "description": "Dart is a client-optimized language for fast apps on any platform."
+                },
+                {
+                    "name": "MySQL",
+                    "description": "MySQL is an open-source relational database management system."
+                },
+                {
+                    "name": "PHP",
+                    "description": "PHP is a general-purpose scripting language especially suited to web development."
+                }
+            ]
+        },
+        {
+            "title": "Frameworks/Platforms",
+            "content": [
+                {
+                    "name": "Flask",
+                    "description": "Flask is a micro web framework written in Python."
+                },
+                {
+                    "name": "Bootstrap",
+                    "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development."
+                },
+                {
+                    "name": "jQuery",
+                    "description": "jQuery: The Write Less, Do More, JavaScript Library"
+                },
+                {
+                    "name": "GCloud",
+                    "description": "Google Cloud Platform lets you build, deploy, and scale applications, websites, and services on the same infrastructure as Google."
+                },
+                {
+                    "name": "AWS",
+                    "description": "Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services."
+                },
+                {
+                    "name": "Flutter",
+                    "description": "Flutter is an open-source native app UI software development kit."
+                },
+                {
+                    "name": "Ubuntu Server",
+                    "description": "Ubuntu Server brings economic and technical scalability to your data centre, public or private."
+                },
+                {
+                    "name": "Windows Server 2019",
+                    "description": "Windows Server 2019 is the latest version of the Windows Server operating systems by Microsoft, developed concurrently with Windows 10."
+                }
+            ]
+        },
+        {
+            "title": "Development Tools",
+            "content": [
+                {
+                    "name": "VS Code",
+                    "description": "Visual Studio Code is a free source-code editor made by Microsoft for Windows, Linux and macOS."
+                },
+                {
+                    "name": "Github -> GitKraken -> Git",
+                    "description": "Git is a distributed version-control system for tracking changes in source code during software development."
+                },
+                {
+                    "name": "Vagrant",
+                    "description": "Vagrant is a tool for building and managing virtual machine environments in a single workflow."
+                },
+                {
+                    "name": "Rider",
+                    "description": "JetBrains Rider is a cross-platform . NET IDE based on the IntelliJ platform and ReSharper, with great integration into Unity 3D."
+                },
+                {
+                    "name": "Kubuntu",
+                    "description": "Ubuntu with a clean KDE Plasma desktop"
+                },
+                {
+                    "name": "Blender",
+                    "description": "Blender is the free and open source 3D creation suite."
+                },
+                {
+                    "name": "Fusion 360",
+                    "description": "Fusion 360 is software for 3D CAD, modeling, manufacturing, industrial design, electronics & mechanical engineering."
+                },
+                {
+                    "name": "Simplify3D",
+                    "description": "Industry leading 3D printing software from Simplify3D with model setup, slicing, print simulations, customizable supports, and more."
+                },
+                {
+                    "name": "QGIS",
+                    "description": "A Free and Open Source Geographic Information System."
+                },
+                {
+                    "name": "Jupyter Notebook",
+                    "description": "The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text."
+                }
+            ]
+        }
+    ]
+}
