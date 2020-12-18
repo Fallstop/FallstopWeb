@@ -6,6 +6,10 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    "siteTitle": "Jasper M-W",
+    "siteTagline": "Not a bot."
+  },
   plugins: [
     "gatsby-image",
     "gatsby-background-image",

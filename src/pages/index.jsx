@@ -28,7 +28,8 @@ const horizontalRule = (
 	<hr className="horizontalRule" id="section2" />
 )
 
-export default function Home() {
+export default function Home({ data, }) {
+	// const { siteTagline, siteTitle } = data.site.siteMetadata;
 	return (
 		<div className="landingPage">
 			
@@ -36,6 +37,7 @@ export default function Home() {
 				{landingContainer}
 				{horizontalRule}
 			</StyledBackgroundSection>
+			<div className="InfoContainerBackground"></div>
 			<InfoContainer/>
 			
 
@@ -43,5 +45,13 @@ export default function Home() {
 	)
 };
 
-
-
+export const pageQuery = graphql`
+	query {
+		site {
+			siteMetadata {
+				siteTitle
+				siteTagline
+			}
+		}
+	}
+`

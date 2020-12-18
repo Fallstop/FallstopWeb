@@ -1,11 +1,12 @@
-.project-container {
+.project {
     $blured-background-image: url(../assets/image/landingBackground-blurV2.jpg);
 
-    &::before {
-        content: "";
+    .projectBackground {
 
-        z-index: -1;
-        filter: blur(20px);
+        z-index: -2;
+        @supports not (backdrop-filter: blur(20px)) {
+            filter: blur(20px);
+        }
         
 
         position: fixed;
@@ -19,6 +20,31 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            
+            width: 100%;
+            height: 100%;
+            @supports (backdrop-filter: blur(20px)) {
+                -webkit-backdrop-filter: blur(20px); /* apply the blur */
+                backdrop-filter: blur(20px);         /* apply the blur */
+            }
+            
+            pointer-events: none; /* make the pseudo class click-through */
+        }
         
+    }
+
+
+    .projectContainer {
+        background-color: black;
+        margin: 0 auto;
+        max-width: 75%;
+        margin-bottom: 5em;
+        box-shadow: 5px 10px #7a7a7a;
+        padding: 2rem 6rem;
     }
 }
