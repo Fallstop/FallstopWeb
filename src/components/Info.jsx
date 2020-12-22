@@ -35,37 +35,29 @@ const SkillsContainer = () => {
 	return <div>{skillItems}</div>;
 }
 
+const projectContainer = () => {
+	let projectElements = [];
+	
+
+	return <div className="projectsContainer">
+		<div className="projectsFlex">
+			{/* <article className="projectBox">
+				<span className="projectTitle">Tank QRL</span>
+			</article> */}
+		</div>
+
+		<div className="projectSeeMore">
+			<a href="/404.html">See More</a>
+		</div>
+	</div>
+}
 
 const InfoContainer = () =>  {
     return (
 	<div className="infoContainer">
 				<div className="content">
 					<h2 className="header">Projects</h2>
-
-					<div className="projectsContainer">
-						<div className="projectsFlex">
-							<article className="projectBox">
-								<span className="projectTitle">GSheet Bells</span>
-							</article>
-							<article className="projectBox">
-								<span className="projectTitle">This website</span>
-							</article>
-							<article className="projectBox">
-								<span className="projectTitle">Questionable Server</span>
-							</article>
-							<article className="projectBox">
-								<span className="projectTitle">BF in rosetta</span>
-							</article>
-							<article className="projectBox">
-								<span className="projectTitle">Tank QRL</span>
-							</article>
-						</div>
-
-						<div className="projectSeeMore">
-							<a href="/mock/index.html">See More</a>
-						</div>
-					</div>
-
+						<projectContainer/>
 					<h2 className="header">Top Skills</h2>
 
 					<div className="skillsContainer">

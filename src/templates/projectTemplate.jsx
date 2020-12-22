@@ -16,12 +16,12 @@ export default function Template({ data, }) {
 			<div className="projectContainer">
 				<div className="projectTitle">
 					<h1>{frontmatter.title}</h1>
-					<h2>{frontmatter.date}</h2>
-					<div
+					<h2 >{frontmatter.date}</h2>
+				</div>
+				<div
 						className="projectContent"
 						dangerouslySetInnerHTML={{ __html: html }}
-					/>
-				</div>
+				/>
 			</div>
 
 		</div>
