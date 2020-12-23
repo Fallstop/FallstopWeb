@@ -1,9 +1,7 @@
 import React from "react";
 
-import BackgroundImage from 'gatsby-background-image';
-import { graphql, StaticQuery } from 'gatsby';
+import { graphql } from 'gatsby';
 
-import Header from "../components/Header";
 import InfoContainer from "../components/Info";
 import StyledBackgroundSection from "../components/BackgroundSection"
 
