@@ -15,6 +15,7 @@ module.exports = {
     "gatsby-background-image",
     "styled-components",
     "styled-media-query",
+    `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-sass",
       options: {
@@ -38,7 +39,25 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 650,
+              backgroundColor: "#333333",
+              withWebp: true,
+
+            }
+          }
+        ]
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -46,7 +65,6 @@ module.exports = {
         name: `projects`,
       },
     },
-
   ],
-  pathPrefix: "/",
+pathPrefix: "/",
 }
