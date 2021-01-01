@@ -1,3 +1,4 @@
+@import "main.scss";
 
 .landingPage {
     
@@ -110,9 +111,6 @@
                 display: inline-block;
 
                 font-size: 5rem;
-                font-style: normal;
-                text-decoration: none;
-                color: inherit;
                 border: transparent;
                 border-radius: 1rem;
                 background-color: rgba(0, 0, 0, 0.5);
@@ -132,24 +130,29 @@
             justify-content: center;
             flex-wrap: wrap;
             .projectBox {
-                margin: 4em;
+                margin: 2em;
                 width: 20em;
                 height: 10em;
                 background: rgba(0, 0, 0, 0.5);
                 border: 5px solid white;
                 border-radius: 20px;
-                padding: 1em;
+                padding: 2rem;
 
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
+                transition: all 0.2s ease-in-out;
+
                 .projectTitle {
-                    font-family: "Josefin Sans", sans-serif;
                     text-transform: uppercase;
                     letter-spacing: 0.2em;
-                    font-size: 2rem;
+                    font-size: 2.5rem;
                     text-align: center;
+                }
+                &:hover {
+                    transform: scale(1.1);
+                    background-color: rgba(255, 255, 255, 0.1);
                 }
             }
         }

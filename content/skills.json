@@ -20,8 +20,8 @@
                     "description": "Open-source electronic prototyping platform enabling users to create interactive electronic objects. "
                 },
                 {
-                    "name": "HTML/CSS/SCSS/JS",
-                    "description": "The fundamental web languages."
+                    "name": "HTML/CSS/JS/SCSS/JSX...",
+                    "description": "All fundamental web languages."
                 },
                 {
                     "name": "Dart",
@@ -71,6 +71,14 @@
                 {
                     "name": "Windows Server 2019",
                     "description": "Windows Server 2019 is the latest version of the Windows Server operating systems by Microsoft, developed concurrently with Windows 10."
+                },
+                {
+                    "name": "Gatsby",
+                    "description": "A static site generator built on react and GraphQL (It's what this site is built on)."
+                },
+                {
+                    "name": "Wordpress (The CMS)",
+                    "description": "WordPress is a free and open-source content management system written in PHP, it's often confused with the other wordpress which does hosting and support"
                 }
             ]
         },
@@ -116,6 +124,10 @@
                 {
                     "name": "Jupyter Notebook",
                     "description": "The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text."
+                },
+                {
+                    "name": "Yarn",
+                    "description": "Yarn is a package manager that doubles down as project manager as a alternative to npm cli"
                 }
             ]
         }

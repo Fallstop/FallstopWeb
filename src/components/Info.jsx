@@ -1,21 +1,16 @@
 import React from 'react';
 import skillsContent from '../../content/skills.json';
-import { graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const SkillsContainer = () => {
 	let skillItems = [];
-	console.log("Test" + JSON.stringify(skillsContent))
-	// content += JSON.stringify(skillsContent);
-	let i;
-	for (i in skillsContent.sectors) {
-		let sector = skillsContent.sectors[i];
-		console.log("Sector:", sector)
 
+	for (let i in skillsContent.sectors) {
+		let sector = skillsContent.sectors[i];
 		let skillSector = [];
-		let j;
-		for (j in sector.content) {
+
+		for (let j in sector.content) {
 			let skill = sector.content[j];
-			console.log(skill.name)
 			skillSector.push(
 				<div className="skillItem" key={j + 2}>
 					<div className="skillName">{skill.name}</div>
@@ -37,8 +32,8 @@ const SkillsContainer = () => {
 
 const ProjectContainer = () => {
 	let projectElements = [];
-	const result = graphql(`
-      {
+	const result = useStaticQuery(
+		graphql` {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
           limit: 1000
@@ -47,6 +42,7 @@ const ProjectContainer = () => {
             node {
               frontmatter {
                 slug
+				title
               }
             }
           }
@@ -57,14 +53,19 @@ const ProjectContainer = () => {
 		console.log(`Error while running GraphQL query to retrieve project list.`)
 		return
 	}
-	result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-		projectElements.push{
-			<article className="projectBox">
-				<span className="projectTitle">{node.frontmatter.title}</span>
-			</article>
+	console.log(result);
+	result.allMarkdownRemark.edges.forEach(({ node }) => {
+		console.log("Node: ", node.frontmatter)
+		projectElements.push(
+			<a href={node.frontmatter.slug}>
+				<article className="projectBox" key={node.frontmatter.title}>
+					<span className="projectTitle">{node.frontmatter.title}</span>
+				</article>
+			</a>
+
 		)
 	});
-	console.log("project list",projectElements)
+	console.log("project list", projectElements)
 
 	return <div className="projectsContainer">
 		<div className="projectsFlex">
@@ -82,7 +83,7 @@ const InfoContainer = () => {
 		<div className="infoContainer">
 			<div className="content">
 				<h2 className="header">Projects</h2>
-					<ProjectContainer />
+				<ProjectContainer />
 				<h2 className="header">Top Skills</h2>
 
 				<div className="skillsContainer">

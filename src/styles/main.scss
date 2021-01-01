@@ -9,6 +9,10 @@ $text-color: rgb(245, 245, 245);
     vertical-align: baseline;
     background: transparent;
 }
+a {
+    color: $text-color;
+    text-decoration: none; /* no underline */
+  }
 
 :root {
     font-family: "Open Sans", sans-serif;
