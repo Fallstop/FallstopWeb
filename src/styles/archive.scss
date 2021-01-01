@@ -1,0 +1,32 @@
+@import "main.scss";
+
+.archive {
+    .archiveTitle {
+        text-align: center;
+        font-size: 4rem;
+        font-family: "Josefin Sans", sans-serif;
+    }
+    .projectBox {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        border: 2px solid $text-color;
+        padding: 0.5em;
+        border-radius: 5px;
+        .projectTitle {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 2rem;
+        }
+        .projectDate {
+            color: #dddddd;
+            font-size: 1.5rem;
+
+            &::before {
+                content: " - ";
+            }
+        }
+        .projectDescription {
+            margin-top: 1rem;
+            color: #dddddd
+        }
+    }
+}

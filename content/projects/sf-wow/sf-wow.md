@@ -2,4 +2,5 @@
 slug: "/projects/sf-wow"
 date: "2019-05-02"
 title: "Project go asdas"
+description: "SF is BRRRRRRRRRRRRRRRRRRRRRRR RRRRRRRRRR R RRRRR RRRRRRRR RRRRRRRR RRRRRR RRR RRR RR  RBB BB BJBRJKBRKJ  KJ RKJNR KJRN "
 ---

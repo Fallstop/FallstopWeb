@@ -1,19 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
+import StandardLayout from "../components/StandardLayout";
 
 export default function Template({ data, }) {
-	const { markdownRemark, site } = data // data.markdownRemark holds your post data
-	const { frontmatter, html } = markdownRemark;
-	const { siteTagline, siteTitle } = site.siteMetadata;
+	const { frontmatter, html } = data.markdownRemark;
 	return (
-		<div className="project">
-			<div className="projectBackground"></div>
-			<div className="siteHeader">
-				<div className="siteName">{siteTitle}</div>
-				<div className="siteTagline">{siteTagline}</div>
-
-			</div>
-			<div className="projectContainer">
+		<StandardLayout className="projectPage">
 				<div className="projectTitle">
 					<h1>{frontmatter.title}</h1>
 					<h2 >{frontmatter.date}</h2>
@@ -22,9 +14,7 @@ export default function Template({ data, }) {
 						className="projectContent"
 						dangerouslySetInnerHTML={{ __html: html }}
 				/>
-			</div>
-
-		</div>
+		</StandardLayout>
 	)
 }
 
@@ -36,12 +26,6 @@ export const pageQuery = graphql`
 				date(formatString: "MMMM DD, YYYY")
 				slug
 				title
-			}
-		}
-		site {
-			siteMetadata {
-				siteTitle
-				siteTagline
 			}
 		}
 	}

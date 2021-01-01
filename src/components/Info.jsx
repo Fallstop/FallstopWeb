@@ -36,7 +36,7 @@ const ProjectContainer = () => {
 		graphql` {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          limit: 1000
+          limit: 4
         ) {
           edges {
             node {
@@ -49,13 +49,8 @@ const ProjectContainer = () => {
         }
       }
 	`);
-	if (result.errors) {
-		console.log(`Error while running GraphQL query to retrieve project list.`)
-		return
-	}
-	console.log(result);
+
 	result.allMarkdownRemark.edges.forEach(({ node }) => {
-		console.log("Node: ", node.frontmatter)
 		projectElements.push(
 			<a href={node.frontmatter.slug}>
 				<article className="projectBox" key={node.frontmatter.title}>
@@ -65,7 +60,7 @@ const ProjectContainer = () => {
 
 		)
 	});
-	console.log("project list", projectElements)
+	
 
 	return <div className="projectsContainer">
 		<div className="projectsFlex">
@@ -73,7 +68,7 @@ const ProjectContainer = () => {
 		</div>
 
 		<div className="projectSeeMore">
-			<a href="/404.html">See More</a>
+			<a href="/archive">See More</a>
 		</div>
 	</div>
 }

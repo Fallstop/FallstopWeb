@@ -1,77 +1,16 @@
 @import "main.scss";
 
-.project {
-    $blured-background-image: url(../assets/image/landingBackground-blurV2.jpg);
-
-    .projectBackground {
-
-        z-index: -2;
-        @supports not (backdrop-filter: blur(20px)) {
-            filter: blur(20px);
+.projectPage {
+    .projectTitle {
+        margin-bottom: 1.5em;
+        h1 {
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 4rem;
         }
-        
-
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-        background: $blured-background-image no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-
-        &::before {
-            content: "";
-            position: absolute;
-            z-index: -1;
+        h2 {
+            color: #9b9b9b;
             
-            width: 100%;
-            height: 100%;
-            @supports (backdrop-filter: blur(20px)) {
-                -webkit-backdrop-filter: blur(20px); /* apply the blur */
-                backdrop-filter: blur(20px);         /* apply the blur */
-            }
-            
-            pointer-events: none; /* make the pseudo class click-through */
         }
-        
+
     }
-    .siteHeader {
-        text-align: center;
-        font-family: "Josefin Sans", sans-serif;
-        margin-top: 1em;
-        margin-bottom: 2em;
-        .siteName {
-            font-size: 6rem;
-        }
-        .siteTagline {
-            font-size: 2rem;
-        }
-    }
-
-
-    .projectContainer {
-        background-color: rgba(0, 0, 0, 0.6);
-        margin: 0 auto;
-        max-width: 75%;
-        margin-bottom: 5em;
-        box-shadow: 5px 10px rgba(0, 0, 0, 0.103);
-        padding: 2rem 6rem;
-        word-wrap: break-word;
-        .projectTitle {
-            margin-bottom: 1.5em;
-            h1 {
-                font-family: "Josefin Sans", sans-serif;
-                font-size: 4rem;
-            }
-            h2 {
-                color: #9b9b9b;
-                
-            }
-
-        }
-        }
 }
