@@ -25,8 +25,8 @@ export default function Home({ data, }) {
     let projectElements = [];
     projectList.allMarkdownRemark.edges.forEach(({ node }) => {
 		projectElements.push(
-			<a href={node.frontmatter.slug}>
-				<article className="projectBox" key={node.frontmatter.title}>
+			<a href={node.frontmatter.slug} key={node.frontmatter.slug}>
+				<article className="projectBox" >
 					<span className="projectTitle">{node.frontmatter.title}</span>
                     <span className="projectDate">{node.frontmatter.date}</span>
                     <div className="projectDescription">{node.frontmatter.description}</div>

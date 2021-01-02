@@ -52,8 +52,8 @@ const ProjectContainer = () => {
 
 	result.allMarkdownRemark.edges.forEach(({ node }) => {
 		projectElements.push(
-			<a href={node.frontmatter.slug}>
-				<article className="projectBox" key={node.frontmatter.title}>
+			<a href={node.frontmatter.slug} key={node.frontmatter.slug}>
+				<article className="projectBox" >
 					<span className="projectTitle">{node.frontmatter.title}</span>
 				</article>
 			</a>

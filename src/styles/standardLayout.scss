@@ -59,5 +59,11 @@
         box-shadow: 5px 10px rgba(0, 0, 0, 0.103);
         padding: 2rem 6rem;
         word-wrap: break-word;
+        position: relative;
+        .standardLayoutBackButton {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+        }
     }
 }
