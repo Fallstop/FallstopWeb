@@ -4,12 +4,10 @@
     $blured-background-image: url(../assets/image/landingBackground-blurV2.jpg);
     min-height: 100vh;
     .standardLayoutBackground {
-
         z-index: -2;
         @supports not (backdrop-filter: blur(20px)) {
             filter: blur(20px);
         }
-        
 
         position: fixed;
         top: 0;
@@ -27,17 +25,16 @@
             content: "";
             position: absolute;
             z-index: -1;
-            
+
             width: 100%;
             height: 100%;
             @supports (backdrop-filter: blur(20px)) {
                 -webkit-backdrop-filter: blur(20px); /* apply the blur */
-                backdrop-filter: blur(20px);         /* apply the blur */
+                backdrop-filter: blur(20px); /* apply the blur */
             }
-            
+
             pointer-events: none; /* make the pseudo class click-through */
         }
-        
     }
     .siteHeader {
         text-align: center;
@@ -60,10 +57,26 @@
         padding: 2rem 6rem;
         word-wrap: break-word;
         position: relative;
+        min-height: 4em;
         .standardLayoutBackButton {
             position: absolute;
             top: 2rem;
             right: 2rem;
+        }
+    }
+}
+@media (max-width: 700px) {
+    .standardLayout {
+        .siteHeader .siteName {
+            font-size: 15vw;
+            margin: 0 0;
+            padding-top: 0.5em;
+        }
+        .standardLayoutContainer {
+            padding: 3em 0;
+            width: 100vw;
+            max-width: unset;
+            margin: 0;
         }
     }
 }

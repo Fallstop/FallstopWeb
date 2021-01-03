@@ -8,6 +8,7 @@ $text-color: rgb(245, 245, 245);
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+    overflow-x: hidden;
 }
 a {
     color: $text-color;

@@ -1,7 +1,3 @@
-exports.onCreateNode = ({ node }) => {
-    console.log(`Node created of type "${node.internal.type}"`)
-}
-
 exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
   

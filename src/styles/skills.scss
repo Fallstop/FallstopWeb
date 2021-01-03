@@ -1,0 +1,62 @@
+@import "main.scss";
+
+.skillPage {
+
+    .skillsContainer {
+        margin-bottom: 2em;
+
+        .skillClass {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            .skillItem {
+                margin: 1em;
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 1rem;
+                border: rgb(245, 245, 245) solid 3px;
+                border-radius: 1rem;
+                max-width: 40%;
+                min-width: 10em;
+                .skillName {
+                    font-size: 1.4rem;
+                }
+                .skillSummary {
+                    font-style: italic;
+                    color: rgb(189, 189, 189);
+                }
+            }
+        }
+
+        
+    }
+}
+
+@media (max-width: 767px) {
+    .skillPage {
+        margin:0;
+        text-align: center;
+        .subtitle {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .header {
+            margin-top: 0.5em;
+            margin-bottom: 0;
+            font-size: 4em;
+        }
+        .skillsContainer {
+            .skillClass {
+                .skillItem {
+                    max-width: 95vw;
+                    .skillSummary {
+                        font-size: 1.5rem;
+                    }
+                    .skillName {
+                        font-size: 2rem;;
+                    }
+                }
+            }
+        }
+    }
+}

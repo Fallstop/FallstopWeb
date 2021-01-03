@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from 'gatsby';
 
-const StandardLayout = ({ className, children }) => {
+const StandardLayout = ({ className, children}) => {
     const siteQuery = useStaticQuery(
         graphql`{
             site {
