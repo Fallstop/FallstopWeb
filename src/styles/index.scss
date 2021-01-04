@@ -1,6 +1,7 @@
 @import "main.scss";
 
 .landingPage {
+    text-align: center;
     // $background-image: url(../assets/image/landingBackground-desat.jpg);
     // $background-image: #ffffff;
 
@@ -40,6 +41,7 @@
         }
     }
     .InfoContainerBackground {
+        text-align: left;
         position: fixed;
         top: 0;
         left: 0;
@@ -95,17 +97,13 @@
         margin-top: 0.5em;
         margin-bottom: 0;
         font-size: 8rem;
-        text-align: center;
+        
     }
-
-    .content {
-        margin-left: 2rem;
-    }
-    .projectsContainer {
+    .projectsContainer {text-align: center;
         .projectSeeMore {
             overflow: hidden;
             margin: 4em;
-            text-align: center;
+            
             a {
                 display: inline-block;
 
@@ -145,7 +143,7 @@
                     text-transform: uppercase;
                     letter-spacing: 0.2em;
                     font-size: 2.5rem;
-                    text-align: center;
+                    
                 }
                 &:hover {
                     transform: scale(1.1);
@@ -154,14 +152,37 @@
             }
         }
     }
+    .aboutMe {
+        margin: 1em 2em;
+        max-width: 1000px;
+        .aboutLinks {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            .aboutLinkItem {
+                margin: 1em;
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 1rem;
+                border: rgb(245, 245, 245) solid 3px;
+                border-radius: 1rem;
+                max-width: 40%;
+                min-width: 10em;
+                .linkName {
+                    font-size: 1.4rem;
+                }
+                .linkIcon {
+                    font-style: italic;
+                    color: rgb(189, 189, 189);
+                }
+            }
+        }
+    }
+    
 }
 
 @media (max-width: 700px) {
     .landingPage {
-        text-align: center;
-        .InfoContainerBackground {
-            text-align: left;
-        }
         .content {
             margin-left: 0;
         }
@@ -172,7 +193,7 @@
         }
         .subtitle {
             font-size: 2.5rem;
-            text-align: center;
+            
         }
         .header {
             margin-top: 0.5em;
@@ -187,7 +208,7 @@
                 .projectTitle {
                     letter-spacing: 0.1em;
                     font-size: 2rem;
-                    text-align: center;
+                    
                 }
             }
             .projectSeeMore {
@@ -198,5 +219,11 @@
                 margin: 2em;
             }
         }
+    }
+}
+
+@media (min-width: 1000px) {
+    .aboutMe {
+        max-width: 75%;
     }
 }
