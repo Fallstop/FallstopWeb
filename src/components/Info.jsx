@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
 
 
@@ -25,11 +25,11 @@ const ProjectContainer = () => {
 
 	result.allMarkdownRemark.edges.forEach(({ node }) => {
 		projectElements.push(
-			<a href={node.frontmatter.slug} key={node.frontmatter.slug}>
+			<Link to={node.frontmatter.slug} key={node.frontmatter.slug}>
 				<article className="projectBox" >
 					<span className="projectTitle">{node.frontmatter.title}</span>
 				</article>
-			</a>
+			</Link>
 
 		)
 	});
@@ -41,7 +41,7 @@ const ProjectContainer = () => {
 		</div>
 
 		<div className="projectSeeMore">
-			<a href="/archive">See More</a>
+			<Link to="/archive">See More</Link>
 		</div>
 	</div>
 }
@@ -54,7 +54,8 @@ const AboutMe = () => {
 			I am currently studying in Year 11 in Huanui Collage and contract part time for website design/various other things. I am also a full time member of <a href="https://questionable.org.nz" style={{color: "#007acc"}} target="__none">Questionable Research Labs</a>, and you might also find many of my projects are supported by them and their members.
 		</span>
 		<div className="aboutLinks">
-			<a href="/" target="__none">
+			<a href="mailto:jasper@qrl.nz" target="__none" className="tooltip">
+				<span className="tooltiptext">Wow</span>
 				<div className="aboutLinkItem">
 					<div className="aboutLinkName">Email</div>
 					<div className="aboutLinkIcon"></div>
@@ -66,7 +67,7 @@ const AboutMe = () => {
 					<div className="aboutLinkIcon"></div>
 				</div>
 			</a>
-			<a href="/" target="__none">
+			<a href="https://discordapp.com/users/310135293254696970" target="__none">
 				<div className="aboutLinkItem">
 					<div className="aboutLinkName">Discord</div>
 					<div className="aboutLinkIcon"></div>
@@ -75,12 +76,12 @@ const AboutMe = () => {
 			
 		</div>
 		<div className="aboutLinks">
-			<a href="/skills">
+			<Link to="/skills">
 				<div className="aboutLinkItem">
 					<div className="aboutLinkName">Skills</div>
 					<div className="aboutLinkIcon"></div>
 				</div>
-			</a>
+			</Link>
 		</div>
 	</div>
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import StandardLayout from "../components/StandardLayout";
-import {useStaticQuery, graphql } from 'gatsby';
+import {useStaticQuery, graphql, Link } from 'gatsby';
 
 export default function Home({ data, }) {
     const projectList = useStaticQuery(
@@ -25,13 +25,13 @@ export default function Home({ data, }) {
     let projectElements = [];
     projectList.allMarkdownRemark.edges.forEach(({ node }) => {
 		projectElements.push(
-			<a href={node.frontmatter.slug} key={node.frontmatter.slug}>
+			<Link to={node.frontmatter.slug} key={node.frontmatter.slug}>
 				<article className="projectBox" >
 					<span className="projectTitle">{node.frontmatter.title}</span>
                     <span className="projectDate">{node.frontmatter.date}</span>
                     <div className="projectDescription">{node.frontmatter.description}</div>
 				</article>
-			</a>
+			</Link>
 		);
 	});
     return (

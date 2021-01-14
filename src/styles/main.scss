@@ -1,4 +1,7 @@
 $text-color: rgb(245, 245, 245);
+$deselected-background: rgba(0, 0, 0, 0.5);
+$selected-background: rgba(255, 255, 255, 0.1);
+
 
 * {
     margin: 0;
@@ -13,7 +16,7 @@ $text-color: rgb(245, 245, 245);
 a {
     color: $text-color;
     text-decoration: none; /* no underline */
-  }
+}
 
 :root {
     font-family: "Open Sans", sans-serif;
@@ -28,4 +31,28 @@ body {
     color: $text-color;
     overflow-x: hidden;
     margin: 0;
+}
+
+.tooltip {
+    .tooltiptext {
+        transition: all 0.2s ease-in-out;
+        opacity: 0;
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 10px;
+    
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: -50%;
+        // bottom: 100%;
+        // left: 50%;
+        // margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    }
+    &:hover .tooltiptext {
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+    }
 }
