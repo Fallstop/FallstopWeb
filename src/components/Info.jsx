@@ -48,11 +48,19 @@ const ProjectContainer = () => {
 
 const AboutMe = () => {
 	return <div className="aboutMe">
-		<span className="basicPersonalInformation">
-			I am a software developer/stack overflow expert that likes to experiment in new technologies.
-			<br/>
-			I am currently studying in Year 11 in Huanui Collage and contract part time for website design/various other things. I am also a full time member of <a href="https://questionable.org.nz" style={{color: "#007acc"}} target="__none">Questionable Research Labs</a>, and you might also find many of my projects are supported by them and their members.
-		</span>
+		<div className="aboutInfoContainer">
+			<div className="aboutQuickView">
+				<h3 className="aboutName">Jasper Miller-Waugh</h3>
+				<span className="aboutUsername">Fallstop</span>
+			</div>
+			<div className="aboutPersonalInformation">
+				I am a software developer/stack overflow expert that likes to experiment in new technologies.
+				<br/>
+				I am currently studying in Year 11 in Huanui Collage and contract part time for website design/various other things. I am also a full time member of <a href="https://questionable.org.nz" style={{color: "#007acc"}} target="__none">Questionable Research Labs</a>, and you might also find many of my projects are supported by them and their members.
+			</div>
+			
+		</div>
+		
 		<div className="aboutLinks">
 			<a href="mailto:jasper@qrl.nz" target="__none" className="tooltip">
 				<span className="tooltiptext">Wow</span>
