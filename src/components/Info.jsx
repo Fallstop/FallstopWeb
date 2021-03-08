@@ -80,9 +80,9 @@ const AboutMe = () => {
 				<br />
 				I am currently studying in Year 11 in Huanui Collage and contract part time for website design/various other things. I am also a full time member of <a href="https://questionable.org.nz" style={{ color: "#007acc" }} target="__none">Questionable Research Labs</a>, and you might also find many of my projects are supported by them and their members.
 				<div className="aboutLinks centerAlign">
-					<Link  to="/skills">
+					<Link  to="/tools">
 						<div className="aboutLinkItem">
-							<div className="aboutLinkName">Skills</div>
+							<div className="aboutLinkName">Tools</div>
 							<div className="aboutLinkIcon"></div>
 						</div>
 					</Link>

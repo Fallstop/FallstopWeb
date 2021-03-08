@@ -157,22 +157,16 @@
         max-width: 75%;
         .aboutInfoContainer {
             background-color: $deselected-background;
-            clip-path: polygon(5% 10%, 100% 0, 95% 90%, 0% 100%);
-            display: grid;
             padding: 2em 4em;
+            display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 1fr;
-            grid-column-gap: 0px;
+            grid-column-gap: 1em;
             grid-row-gap: 0px;
             text-align: left;
-            min-height: 20em;
             .aboutPersonalInformation {
-                padding: 2.5em 4.5em;
-                grid-area: 1 / 2 / 2 / 3;
             }
             .aboutQuickView {
-                padding: 2.5em 4.5em;
-                grid-area: 1 / 1 / 2 / 2;
                 
                 .aboutName {
                     font-size: 2.5em;
@@ -191,8 +185,6 @@
                 background-color: $deselected-background;
                 border-radius: 1rem;
                 border: rgb(245, 245, 245) solid 3px;
-                max-width: 40%;
-                min-width: 10em;
                 transition: all 0.2s ease-in-out;
                 .aboutLinkItem {
                     
@@ -201,7 +193,6 @@
                         font-size: 1.4rem;
                     }
                     .linkIcon {
-                        font-style: italic;
                         color: rgb(189, 189, 189);
                     }
                     
@@ -230,6 +221,7 @@
 
 @media (max-width: 700px) {
     .landingPage {
+        
         .content {
             margin-left: 0;
         }

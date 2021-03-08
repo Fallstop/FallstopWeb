@@ -165,11 +165,11 @@ body {
   text-align: center;
 }
 
-.skillsContainer {
+.toolsContainer {
   margin-bottom: 2em;
 }
 
-.skillsContainer .skillClass {
+.toolsContainer .toolClass {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,7 +184,7 @@ body {
           justify-content: center;
 }
 
-.skillsContainer .skillItem {
+.toolsContainer .toolItem {
   margin: 1em;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 1rem;
@@ -194,11 +194,11 @@ body {
   min-width: 10em;
 }
 
-.skillsContainer .skillItem .skillName {
+.toolsContainer .toolItem .toolName {
   font-size: 1.4rem;
 }
 
-.skillsContainer .skillItem .skillSummary {
+.toolsContainer .toolItem .toolSummary {
   font-style: italic;
   color: #bdbdbd;
 }

@@ -143,17 +143,17 @@ body {
     }
 }
 
-.skillsContainer {
+.toolsContainer {
     margin-bottom: 2em;
 
-    .skillClass {
+    .toolClass {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
     }
 
-    .skillItem {
+    .toolItem {
         margin: 1em;
         background-color: rgba(0, 0, 0, 0.6);
         padding: 1rem;
@@ -161,10 +161,10 @@ body {
         border-radius: 1rem;
         max-width: 40%;
         min-width: 10em;
-        .skillName {
+        .toolName {
             font-size: 1.4rem;
         }
-        .skillSummary {
+        .toolSummary {
             font-style: italic;
             color: rgb(189, 189, 189);
         }

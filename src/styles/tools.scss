@@ -1,16 +1,25 @@
 @import "main.scss";
 
-.skillPage {
+.toolPage {
+    text-align: center;
+    .subtitle {
+        margin: 1em 0;
+        font-size: 4rem;
+        
+    }
+    .header {
+        font-size: 6rem;
+    }
 
-    .skillsContainer {
+    .toolsContainer {
         margin-bottom: 2em;
 
-        .skillClass {
+        .toolClass {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: center;
-            .skillItem {
+            .toolItem {
                 margin: 1em;
                 background-color: rgba(0, 0, 0, 0.6);
                 padding: 1rem;
@@ -18,10 +27,10 @@
                 border-radius: 1rem;
                 max-width: 40%;
                 min-width: 10em;
-                .skillName {
+                .toolName {
                     font-size: 1.4rem;
                 }
-                .skillSummary {
+                .toolSummary {
                     font-style: italic;
                     color: rgb(189, 189, 189);
                 }
@@ -33,7 +42,7 @@
 }
 
 @media (max-width: 767px) {
-    .skillPage {
+    .toolPage {
         margin:0;
         text-align: center;
         .subtitle {
@@ -45,14 +54,14 @@
             margin-bottom: 0;
             font-size: 4em;
         }
-        .skillsContainer {
-            .skillClass {
-                .skillItem {
+        .toolsContainer {
+            .toolClass {
+                .toolItem {
                     max-width: 95vw;
-                    .skillSummary {
+                    .toolSummary {
                         font-size: 1.5rem;
                     }
-                    .skillName {
+                    .toolName {
                         font-size: 2rem;;
                     }
                 }

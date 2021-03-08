@@ -38,7 +38,24 @@
             ]
         },
         {
-            "title": "Frameworks/Platforms",
+            "title": "Hosting",
+            "content": [
+                {
+                    "name": "GCloud",
+                    "description": "Google Cloud Platform lets you build, deploy, and scale applications, websites, and services on the same infrastructure as Google."
+                },
+                {
+                    "name": "AWS",
+                    "description": "Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services."
+                },
+                {
+                    "name": "In house compute",
+                    "description": "Good old In-House compute, I manage 3 desktop servers and 2 rack mount servers running everything from Windows Server, to more commonly Ubuntu Server to Free-BSD."
+                }
+            ]
+        },
+        {
+            "title": "Frameworks",
             "content": [
                 {
                     "name": "Flask",
@@ -52,14 +69,7 @@
                     "name": "jQuery",
                     "description": "jQuery: The Write Less, Do More, JavaScript Library"
                 },
-                {
-                    "name": "GCloud",
-                    "description": "Google Cloud Platform lets you build, deploy, and scale applications, websites, and services on the same infrastructure as Google."
-                },
-                {
-                    "name": "AWS",
-                    "description": "Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services."
-                },
+                
                 {
                     "name": "Flutter",
                     "description": "Flutter is an open-source native app UI software development kit."
@@ -80,6 +90,7 @@
                     "name": "Wordpress (The CMS)",
                     "description": "WordPress is a free and open-source content management system written in PHP, it's often confused with the other wordpress which does hosting and support"
                 }
+                
             ]
         },
         {
