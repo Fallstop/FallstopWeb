@@ -1,10 +1,14 @@
 import React from "react"
 import { graphql } from "gatsby"
+
 import StandardLayout from "../components/StandardLayout";
+import { SEO } from "../components/SEO";
 
 export default function Template({ data, }) {
 	const { frontmatter, html } = data.markdownRemark;
 	return (
+		<>
+		<SEO titleExt={frontmatter.title} description={frontmatter.description}/>
 		<StandardLayout className="projectPage">
 				<div className="projectTitle">
 					<h1>{frontmatter.title}</h1>
@@ -15,6 +19,7 @@ export default function Template({ data, }) {
 						dangerouslySetInnerHTML={{ __html: html }}
 				/>
 		</StandardLayout>
+		</>
 	)
 }
 

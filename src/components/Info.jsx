@@ -41,7 +41,7 @@ const ProjectContainer = () => {
 		</div>
 
 		<div className="projectSeeMore">
-			<Link to="/archive">See More</Link>
+			<Link to="/archive" about="Go to the Project Archive Page">Project Archive</Link>
 		</div>
 	</div>
 }
@@ -99,9 +99,9 @@ const InfoContainer = () => {
 	return (
 		<div className="infoContainer">
 			<div className="content">
-				<h2 className="header">Projects</h2>
+				<h2 className="header" id="projectSection">Projects</h2>
 				<ProjectContainer />
-				<h2 className="header">About Me</h2>
+				<h2 className="header" id="aboutMeSection">About Me</h2>
 				<AboutMe />
 			</div>
 		</div>)

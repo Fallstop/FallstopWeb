@@ -5,6 +5,7 @@ import { graphql } from 'gatsby';
 import InfoContainer from "../components/Info";
 import StyledBackgroundSection from "../components/BackgroundSection"
 
+import { SEO } from "../components/SEO";
 
 const landingContainer = (
 	<div className="landingContainer">
@@ -29,6 +30,8 @@ const horizontalRule = (
 export default function Home({ data, }) {
 	// const { siteTagline, siteTitle } = data.site.siteMetadata;
 	return (
+		<div>
+			<SEO/>
 		<div className="landingPage">
 			
 			<StyledBackgroundSection>
@@ -40,8 +43,9 @@ export default function Home({ data, }) {
 			
 
 		</div>
+	</div>
 	)
-};
+}
 
 export const pageQuery = graphql`
 	query {

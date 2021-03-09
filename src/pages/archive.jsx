@@ -1,6 +1,11 @@
 import React from "react";
+
 import StandardLayout from "../components/StandardLayout";
+import { SEO } from "../components/SEO";
+
 import {useStaticQuery, graphql, Link } from 'gatsby';
+
+
 
 export default function Home({ data, }) {
     const projectList = useStaticQuery(
@@ -35,9 +40,12 @@ export default function Home({ data, }) {
 		);
 	});
     return (
+      <>
+        <SEO titleExt="Archive" description="Jasper Miller-Waugh's archive of past projects."/>
         <StandardLayout className="archive">
             <div className="archiveTitle">Project Archive</div>
             {projectElements}
         </StandardLayout>
+      </>
     )
 }
