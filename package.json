@@ -5,9 +5,13 @@
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
-    "deploy": "gatsby build --prefix-paths && echo 'jasper.qrl.nz' > public/CNAME && gh-pages -d public"
+    "deploy": "cowsay No.",
+    "develop": "gatsby develop",
+    "dev": "gatsby develop"
   },
   "dependencies": {
+    "@fontsource/josefin-sans": "^4.2.2",
+    "@fontsource/open-sans": "^4.2.2",
     "fs": "^0.0.1-security",
     "gatsby": "^2.24.67",
     "gatsby-background-image": "^1.2.0",

@@ -2,6 +2,10 @@ $text-color: rgb(245, 245, 245);
 $deselected-background: rgba(0, 0, 0, 0.5);
 $selected-background: rgba(255, 255, 255, 0.1);
 
+@import "~@fontsource/open-sans/index.css";
+@import "~@fontsource/josefin-sans/index.css";
+
+// @import "~@fontsource/open-sans/scss/mixins";
 
 * {
     margin: 0;
