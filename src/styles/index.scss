@@ -46,18 +46,21 @@
             transition: all ease 200ms;
             box-sizing: border-box;
             overflow: hidden;
-        
+            cursor: pointer;
 
             &:hover {
                 transform: scale(1.1);
             }
+            &:active {
+                transform: scale(1.8);
+            }
 
             svg {
                 #FallstopLogoBW-FailingLines * {
-                    stroke: $text-color
+                    stroke: $text-color;
                 }
                 #FallstopLogoBW-Text * {
-                    fill: $text-color
+                    fill: $text-color;
                 }
                 #FallstopLogoBW-Octagon {
                     stroke: $text-color;
@@ -182,6 +185,7 @@
         $subheader-size: 2rem;
         margin: 1em auto;
         max-width: 75%;
+        margin-bottom: 4em;
         .aboutInfoContainer {
             background-color: $deselected-background;
             padding: 2em 4em;
@@ -210,7 +214,6 @@
                 .aboutUsername {
                     font-size: $subheader-size;
                 }
-                
             }
             .aboutLinks {
                 a {
@@ -243,7 +246,6 @@
                             background-color: $selected-background;
                         }
                     }
-                    
                 }
             }
         }
@@ -298,12 +300,24 @@
                 margin: 2em;
             }
         }
-    }
-    .landingPage {
         .aboutMe {
-            margin: 1em auto;
+            margin: 1em 0 0 0;
+            width: 100%;
+            max-width: 100%;
+            .aboutInfoContainer {
+                display: block;
+                padding: 1em;
+                margin: 0;
+                .aboutQuickView {
+                    border-right: none;
+                } 
+                .aboutPersonalInformation .aboutPersonalHeader{
+                    padding-top: 1rem;
+                }
+            }
         }
     }
+
 }
 
 @media (min-width: 1000px) {

@@ -30,11 +30,13 @@ a {
 
 html {
     height: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
 }
 
 body {
     color: $text-color;
-    overflow-x: hidden;
+    
     margin: 0;
 }
 
