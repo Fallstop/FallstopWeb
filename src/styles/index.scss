@@ -38,6 +38,33 @@
         .revealContainer:hover {
             background-color: rgba(0, 0, 0, 0.5);
         }
+        .centerLogo {
+            margin: 0 auto;
+            margin-top: 5em;
+            // height:5em;
+            width: 100%;
+            transition: all ease 200ms;
+            box-sizing: border-box;
+            overflow: hidden;
+        
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            svg {
+                #FallstopLogoBW-FailingLines * {
+                    stroke: $text-color
+                }
+                #FallstopLogoBW-Text * {
+                    fill: $text-color
+                }
+                #FallstopLogoBW-Octagon {
+                    stroke: $text-color;
+                    fill: $deselected-background;
+                }
+            }
+        }
     }
     .InfoContainerBackground {
         text-align: left;
@@ -96,20 +123,20 @@
         margin-top: 0.5em;
         margin-bottom: 0;
         font-size: 8rem;
-        
     }
-    .projectsContainer {text-align: center;
+    .projectsContainer {
+        text-align: center;
         .projectSeeMore {
             overflow: hidden;
             margin: 4em;
-            
+
             a {
                 display: inline-block;
 
                 font-size: 5rem;
                 border: transparent;
                 border-radius: 1rem;
-                background-color: rgba(0, 0, 0, 0.5);
+                background-color: $deselected-background;
                 padding: 0.3em;
                 transition: all 0.2s ease-in-out;
             }
@@ -142,7 +169,6 @@
                     text-transform: uppercase;
                     letter-spacing: 0.2em;
                     font-size: 2.5rem;
-                    
                 }
                 &:hover {
                     transform: scale(1.1);
@@ -152,6 +178,8 @@
         }
     }
     .aboutMe {
+        $header-size: 2.5em;
+        $subheader-size: 2rem;
         margin: 1em auto;
         max-width: 75%;
         .aboutInfoContainer {
@@ -164,49 +192,66 @@
             grid-row-gap: 0px;
             text-align: left;
             .aboutPersonalInformation {
+                .aboutPersonalHeader {
+                    font-size: $header-size;
+                    margin-bottom: 0.5em;
+                }
+                .aboutPersonalSubheader {
+                    margin-bottom: 0.5em;
+                    font-weight: bold;
+                }
             }
             .aboutQuickView {
-                
+                border-right: $text-color solid 3px;
+
                 .aboutName {
-                    font-size: 2.5em;
+                    font-size: $header-size;
                 }
                 .aboutUsername {
-                    font-size: 1.5rem;
+                    font-size: $subheader-size;
+                }
+                
+            }
+            .aboutLinks {
+                a {
+                    .aboutLinkItem {
+                        margin: 1em;
+                        background-color: $deselected-background;
+                        border-radius: 1rem;
+                        border: $text-color solid 3px;
+                        transition: all 0.2s ease-in-out;
+
+                        padding: 1rem;
+                        .aboutLinkName {
+                            font-size: 1.4rem;
+                            margin-right: 1rem;
+                            .aboutLinkNameSubtext {
+                                color: $secondary-text-color;
+                            }
+                        }
+                        .aboutLinkIcon {
+                            float: right;
+                            color: $text-color !important;
+                            fill: $text-color !important;
+                            svg {
+                                position: relative;
+                                top: 0.3em;
+                            }
+                        }
+                        &:hover {
+                            transform: scale(1.01);
+                            background-color: $selected-background;
+                        }
+                    }
+                    
                 }
             }
         }
 
-        .aboutLinks {
-            
-            
-            a {
-                margin: 1em;
-                background-color: $deselected-background;
-                border-radius: 1rem;
-                border: rgb(245, 245, 245) solid 3px;
-                transition: all 0.2s ease-in-out;
-                .aboutLinkItem {
-                    
-                    padding: 1rem;
-                    .linkName {
-                        font-size: 1.4rem;
-                    }
-                    .linkIcon {
-                        color: rgb(189, 189, 189);
-                    }
-                    
-                }
-                &:hover {
-                    transform: scale(1.1);
-                    background-color: $selected-background;
-                }
-            }
-            
-        }
         .centerAlign {
             display: flex;
             flex-wrap: wrap;
-            
+
             width: 100%;
             justify-content: center;
             flex-direction: row;
@@ -215,12 +260,10 @@
             display: flex;
         }
     }
-    
 }
 
 @media (max-width: 700px) {
     .landingPage {
-        
         .content {
             margin-left: 0;
         }
@@ -231,7 +274,6 @@
         }
         .subtitle {
             font-size: 2.5rem;
-            
         }
         .header {
             margin-top: 0.5em;
@@ -246,7 +288,6 @@
                 .projectTitle {
                     letter-spacing: 0.1em;
                     font-size: 2rem;
-                    
                 }
             }
             .projectSeeMore {
@@ -263,7 +304,6 @@
             margin: 1em auto;
         }
     }
-    
 }
 
 @media (min-width: 1000px) {

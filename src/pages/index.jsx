@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 
 import InfoContainer from "../components/Info";
 import StyledBackgroundSection from "../components/BackgroundSection"
-
+import { FallstopLogoBW } from "../components/SVGS"
 import { SEO } from "../components/SEO";
 
 const landingContainer = (
@@ -13,6 +13,7 @@ const landingContainer = (
 			<h1 className="title">Jasper M-W</h1>
 			<p className="subtitle">Not a bot</p>
 		</div>
+		<div className="centerLogo"><FallstopLogoBW /></div>
 		<a className="revealContainer" href="#section2">
 			<span>See More</span>
 			<svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-chevron-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -31,19 +32,19 @@ export default function Home({ data, }) {
 	// const { siteTagline, siteTitle } = data.site.siteMetadata;
 	return (
 		<div>
-			<SEO/>
-		<div className="landingPage">
-			
-			<StyledBackgroundSection>
-				{landingContainer}
-				{horizontalRule}
-			</StyledBackgroundSection>
-			<div className="InfoContainerBackground"></div>
-			<InfoContainer/>
-			
+			<SEO />
+			<div className="landingPage">
 
+				<StyledBackgroundSection>
+					{landingContainer}
+					{horizontalRule}
+				</StyledBackgroundSection>
+				<div className="InfoContainerBackground"></div>
+				<InfoContainer />
+
+
+			</div>
 		</div>
-	</div>
 	)
 }
 

@@ -64,7 +64,14 @@ module.exports = {
         name: `projects`,
       },
     },
-
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /src\/assets\/svg/
+        }
+      }
+    },
     // {
     //   resolve: "gatsby-plugin-seo",
     //   options: {
@@ -88,5 +95,5 @@ module.exports = {
     // }
     'gatsby-plugin-next-seo',
   ],
-pathPrefix: "/",
+  pathPrefix: "/",
 }

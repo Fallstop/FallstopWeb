@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 
-
+import { MailIcon, DiscordIcon, GithubIcon, ToolsIcon } from './SVGS';
 
 const ProjectContainer = () => {
 	let projectElements = [];
@@ -56,34 +56,45 @@ const AboutMe = () => {
 					<a href="mailto:jasper@qrl.nz" target="__none" className="tooltip">
 						<span className="tooltiptext">Wow</span>
 						<div className="aboutLinkItem">
-							<div className="aboutLinkName">Email</div>
-							<div className="aboutLinkIcon"></div>
+							<span className="aboutLinkName">Email - <span className="aboutLinkNameSubtext">jasper@qrl.nz</span></span>
+							<span className="aboutLinkIcon">
+								<MailIcon/>
+							</span>
 						</div>
 					</a>
 					<a href="https://github.com/Fallstop" target="__none">
 						<div className="aboutLinkItem">
-							<div className="aboutLinkName">Github</div>
-							<div className="aboutLinkIcon"></div>
+							<span className="aboutLinkName">Github - <span className="aboutLinkNameSubtext">Fallstop</span></span>
+							<span className="aboutLinkIcon">
+								<GithubIcon/>
+							</span>
 						</div>
 					</a>
 					<a href="https://discordapp.com/users/310135293254696970" target="__none">
 						<div className="aboutLinkItem">
-							<div className="aboutLinkName">Discord</div>
-							<div className="aboutLinkIcon"></div>
+							<span className="aboutLinkName">Discord - <span className="aboutLinkNameSubtext">fallstop#3106</span></span>
+							<span className="aboutLinkIcon">
+								<DiscordIcon/>
+							</span>
 						</div>
 					</a>
 
 				</div>
 			</div>
 			<div className="aboutPersonalInformation">
-				I am a software developer/stack overflow expert that likes to experiment in new technologies.
-				<br />
-				I am currently studying in Year 11 in Huanui Collage and contract part time for website design/various other things. I am also a full time member of <a href="https://questionable.org.nz" style={{ color: "#007acc" }} target="__none">Questionable Research Labs</a>, and you might also find many of my projects are supported by them and their members.
+				<h3 className="aboutPersonalHeader">Confirmed Bot</h3>
+				<div className="aboutPersonalSubheader">I am a software developer/stack overflow expert that likes to experiment in new technologies.</div>
+				
+				I am currently studying in Year 11 in Huanui Collage and contract part time for website design/various other things. I am also a full time
+				member of <a href="https://questionable.org.nz" style={{ color: "#007acc" }} target="__none">Questionable Research Labs</a>,
+				and you might also find many of my projects are supported by them and their members.
+				<br/><br/>
+				But that is enough about my life, the real question is what tools I use, and here is the answers:
 				<div className="aboutLinks centerAlign">
-					<Link  to="/tools">
+					<Link to="/tools">
 						<div className="aboutLinkItem">
-							<div className="aboutLinkName">Tools</div>
-							<div className="aboutLinkIcon"></div>
+							<span className="aboutLinkName">Tools</span>
+							<span className="aboutLinkIcon"><ToolsIcon/></span>
 						</div>
 					</Link>
 				</div>
