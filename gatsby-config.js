@@ -29,6 +29,25 @@ module.exports = {
         path: `${__dirname}/src/assets/image/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/content/projects`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `JasperMW-Portfolio`,
+        short_name: `JasperMW`,
+        start_url: `/`,
+        background_color: `#3a5455`,
+        theme_color: `#f5f5f5`,
+        display: `standalone`,
+        icon: `src/assets/image/FallstopLogo.png`, // This path is relative to the root of the site.
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
@@ -56,13 +75,6 @@ module.exports = {
           }
         ]
       }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/projects`,
-        name: `projects`,
-      },
     },
     {
       resolve: "gatsby-plugin-react-svg",
