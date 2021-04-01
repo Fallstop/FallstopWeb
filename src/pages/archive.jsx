@@ -5,7 +5,7 @@ import { SEO } from "../components/SEO";
 
 import {useStaticQuery, graphql, Link } from 'gatsby';
 
-
+import "../styles/archive.scss";
 
 export default function Home({ data, }) {
     const projectList = useStaticQuery(

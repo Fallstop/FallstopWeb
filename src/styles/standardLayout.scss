@@ -49,11 +49,11 @@
         }
     }
     .standardLayoutContainer {
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: $deselected-background;
         margin: 0 auto;
         max-width: 75%;
         margin-bottom: 5em;
-        box-shadow: 5px 10px rgba(0, 0, 0, 0.103);
+        // box-shadow: 5px 10px rgba(0, 0, 0, 0.103);
         padding: 2rem 6rem;
         word-wrap: break-word;
         position: relative;
@@ -73,8 +73,8 @@
             padding-top: 0.5em;
         }
         .standardLayoutContainer {
-            padding: 3em 0;
-            width: 100vw;
+            padding: 2em 1em;
+            width: calc(100vw - 2em);
             max-width: unset;
             margin: 0;
         }

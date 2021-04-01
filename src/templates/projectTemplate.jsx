@@ -4,21 +4,30 @@ import { graphql } from "gatsby"
 import StandardLayout from "../components/StandardLayout";
 import { SEO } from "../components/SEO";
 
+import "../styles/projects.scss";
+
 export default function Template({ data, }) {
-	const { frontmatter, html } = data.markdownRemark;
+	const { frontmatter, html, fields } = data.markdownRemark;
 	return (
 		<>
-		<SEO titleExt={frontmatter.title} description={frontmatter.description}/>
-		<StandardLayout className="projectPage">
+			<SEO titleExt={frontmatter.title} description={frontmatter.description} />
+			<StandardLayout className="projectPage">
 				<div className="projectTitle">
 					<h1>{frontmatter.title}</h1>
-					<h2 >{frontmatter.date}</h2>
+					<div className="summary">
+					<span className="date">
+							{frontmatter.date}
+						</span> | 
+						<span className="reading_time">
+							{fields.readingTime.text}
+						</span>
+					</div>
 				</div>
 				<div
-						className="projectContent"
-						dangerouslySetInnerHTML={{ __html: html }}
+					className="projectContent markdownStyling"
+					dangerouslySetInnerHTML={{ __html: html }}
 				/>
-		</StandardLayout>
+			</StandardLayout>
 		</>
 	)
 }
@@ -31,7 +40,13 @@ export const pageQuery = graphql`
 				date(formatString: "MMMM DD, YYYY")
 				slug
 				title
+			} 
+			fields {
+				readingTime {
+					text
+				}
 			}
+
 		}
 	}
 `

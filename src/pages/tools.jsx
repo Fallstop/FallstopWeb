@@ -3,6 +3,8 @@ import StandardLayout from "../components/StandardLayout";
 import toolsContent from '../../content/tools.json';
 import { SEO } from "../components/SEO";
 
+import "../styles/tools.scss"
+
 const ToolsContainer = () => {
 	let toolItems = [];
 

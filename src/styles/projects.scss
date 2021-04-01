@@ -1,16 +1,23 @@
 @import "main.scss";
+@import "markdown.scss";
 
 .projectPage {
     .projectTitle {
         margin-bottom: 1.5em;
+        padding: 1em;
         h1 {
             font-family: "Josefin Sans", sans-serif;
-            font-size: 4rem;
+            font-size: 4.5rem;
+            padding-top: 0.5rem;
+            border-bottom: solid 3px $greyed-text-color;
         }
-        h2 {
-            color: #9b9b9b;
-            
+        .summary {
+            margin-top: 0.5em;
+            color: $greyed-text-color;
+            font-style: italic;
         }
 
+
     }
+
 }

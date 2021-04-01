@@ -178,7 +178,7 @@ Description
 
 
 
-![alt_text](\project-assets\gsheet-bells\FlashMonotron300CS_o.png)
+![alt_text](FlashMonotron300CS.png)
 
 
 
@@ -196,7 +196,7 @@ Description
 *   Cheapest one I could find         
 
 
-![alt_text](\project-assets\gsheet-bells\DynamicFullyAutomatic_o.png "I didn't know bell controllers could get this bad")
+![alt_text](DynamicFullyAutomatic.png "I didn't know bell controllers could get this bad")
 
 
 ## Options somewhat close to my solution
@@ -218,10 +218,10 @@ Description
 *   Uses POE (Power over ethernet)
 
 
-![alt_text](\project-assets\gsheet-bells\InnovationWirelessInterface_o.png "This is the highest resolution release they have")
+![alt_text](InnovationWirelessInterface.png "This is the highest resolution release they have")
 
 
-![alt_text](\project-assets\gsheet-bells\InervationWirelessController_o.png "image_tooltip")
+![alt_text](InervationWirelessController.png "image_tooltip")
 
 
 
@@ -313,7 +313,7 @@ The prototypes below are defined by the case changes, ignoring software updates 
 First proof of concept, hooked up to google sheets. It worked and ticked the relay on the scheduled time, which was all that was wanted. It is the only one that wasn’t installed at the school for a period of time.
 
 
-![alt_text](\project-assets\gsheet-bells\ProofOfConcept_o.png "It worked except when it didn't!")
+![alt_text](ProofOfConcept.png "It worked except when it didn't!")
 
 
 
@@ -327,11 +327,11 @@ This is the second proof of concept, still stuck down with a piece of bluetack k
 Getting into the more final versions now, this revision brought in a new 3D printed case and internet status LEDs. This version had some flaws with the size of its case (It was super hard to work with and plug stuff in because of how small the space was).
 
 
-![alt_text](\project-assets\gsheet-bells\PrototypeV2_A_o.jpg "Shoddy 3D print -> Good enough")
+![alt_text](PrototypeV2_A.jpg "Shoddy 3D print -> Good enough")
 
-![alt_text](\project-assets\gsheet-bells\PrototypeV2_B_o.png "Dreams of a perfect 3D printer")
+![alt_text](PrototypeV2_B.png "Dreams of a perfect 3D printer")
 
-![alt_text](\project-assets\gsheet-bells\PrototypeV2_C_o.jpg "3D printer go brrrr")
+![alt_text](PrototypeV2_C.jpg "3D printer go brrrr")
 
 
 
@@ -340,14 +340,14 @@ Getting into the more final versions now, this revision brought in a new 3D prin
 This is currently the final revision. It added a new, bigger, case. It also added a new power LED and was the version where the repository name changed from the disgusting “HCBellsPython” to “GSheetBells”.
 
 ### In use at my school
-![alt_text](\project-assets\gsheet-bells\PrototypeV3_o.jpg "Ah yes, RG lighting")
+![alt_text](PrototypeV3.jpg "Ah yes, RG lighting")
 
 
 ### Final Case
-![alt_text](\project-assets\gsheet-bells\caseRenderv4_o.png "You better enjoy it, it took my computer over 12 hours to render this")
+![alt_text](caseRenderv4.png "You better enjoy it, it took my computer over 12 hours to render this")
 
 ### Final Interface
-![alt_text](\project-assets\gsheet-bells\finalInterface_o.png "Google Sheets is superior to Java")
+![alt_text](finalInterface.png "Google Sheets is superior to Java")
 
 # Testing
 

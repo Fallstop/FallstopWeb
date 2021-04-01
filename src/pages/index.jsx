@@ -7,6 +7,8 @@ import StyledBackgroundSection from "../components/BackgroundSection"
 import { FallstopLogoBW } from "../components/SVGS"
 import { SEO } from "../components/SEO";
 
+import "../styles/index.scss";
+
 function openNotARickRoll () {
 	window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 }
@@ -15,7 +17,7 @@ const landingContainer = (
 	<div className="landingContainer">
 		<div className="content">
 			<h1 className="title">Jasper M-W</h1>
-			<p className="subtitle">Under Devlopment.</p>
+			<p className="subtitle">Under Development.</p>
 		</div>
 		<div className="centerLogo" onClick={openNotARickRoll} >
 			<FallstopLogoBW />

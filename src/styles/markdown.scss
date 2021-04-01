@@ -1,0 +1,33 @@
+@import "main.scss";
+
+.markdownStyling {
+    color: $text-color;
+    h1 {
+        font-size: 3.5rem;
+        font-family: "Josefin Sans", sans-serif;
+        padding-top: 0.5rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    a {
+        color: $link-color;
+    }
+    p {
+        margin-bottom: 2rem;
+    }
+    ul {
+        list-style: disc outside none;
+        padding-left: 40px;
+
+        li {
+            display: list-item;
+            list-style: disc;
+
+        }
+    }
+}
