@@ -35,20 +35,19 @@
             }
             transition: all 0.2s ease-in-out;
         }
-        .revealContainer:hover {
+        .revealContainer:hover, .revealContainer:focus {
             background-color: rgba(0, 0, 0, 0.5);
         }
         .centerLogo {
             margin: 0 auto;
             margin-top: 5em;
             // height:5em;
-            width: 100%;
             transition: all ease 200ms;
             box-sizing: border-box;
             overflow: hidden;
             cursor: pointer;
 
-            &:hover {
+            &:hover, &:focus {
                 transform: scale(1.1);
             }
             &:active {
@@ -56,6 +55,8 @@
             }
 
             svg {
+                height: 15em;
+                width: 15em;
                 #FallstopLogoBW-FailingLines * {
                     stroke: $text-color;
                 }
@@ -143,7 +144,7 @@
                 padding: 0.3em;
                 transition: all 0.2s ease-in-out;
             }
-            a:hover {
+            a:hover, a:focus {
                 transform: scale(1.1);
                 background-color: $selected-background;
             }
@@ -173,7 +174,7 @@
                     letter-spacing: 0.2em;
                     font-size: 2.5rem;
                 }
-                &:hover {
+                &:hover, &:focus {
                     transform: scale(1.1);
                     background-color: $selected-background;
                 }
@@ -196,8 +197,10 @@
             grid-row-gap: 0px;
             text-align: left;
             .aboutPersonalInformation {
+                padding-left: 1em;
                 .aboutPersonalHeader {
                     font-size: $header-size;
+                    padding-top:0.5rem;
                     margin-bottom: 0.5em;
                 }
                 .aboutPersonalSubheader {
@@ -207,7 +210,7 @@
             }
             .aboutQuickView {
                 border-right: $text-color solid 3px;
-
+                padding-right: 1em;
                 .aboutName {
                     font-size: $header-size;
                 }
@@ -241,7 +244,7 @@
                                 top: 0.3em;
                             }
                         }
-                        &:hover {
+                        &:hover, &:focus {
                             transform: scale(1.01);
                             background-color: $selected-background;
                         }

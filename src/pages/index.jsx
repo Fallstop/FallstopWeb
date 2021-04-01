@@ -19,7 +19,11 @@ const landingContainer = (
 			<h1 className="title">Jasper M-W</h1>
 			<p className="subtitle">Under Development.</p>
 		</div>
-		<div className="centerLogo" onClick={openNotARickRoll} >
+		<div className="centerLogo"
+			onClick={openNotARickRoll}
+			onKeyDown={  function handleKeyDown(e) { if (e.keyCode === 13 || e.keyCode === 32) { e.preventDefault(); openNotARickRoll();}}}
+			role="button"
+			tabIndex={0} >
 			<FallstopLogoBW />
 		</div>
 		<script>
