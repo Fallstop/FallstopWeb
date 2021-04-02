@@ -21,12 +21,13 @@
         margin-bottom: 2rem;
     }
     ul {
-        list-style: disc outside none;
+        // list-style: disc outside none;
         padding-left: 40px;
 
         li {
             display: list-item;
             list-style: disc;
+            overflow-x: initial;
 
         }
     }
