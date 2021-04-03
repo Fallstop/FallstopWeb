@@ -18,6 +18,39 @@
         height: 100vh;
         width: 100vw;
 
+        .typewriterEffect {
+            position: relative;
+            top: 50%;
+            width: 24em;
+            margin: 0 auto;
+            padding: 0;
+            border-right: 2px solid rgba(255, 255, 255, 0.75);
+            font-size: 180%;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            animation: typewriter 1s steps(19) 0.2s 1 both normal, blinkTextCursor 500ms steps(19) infinite normal;
+        }
+
+        @keyframes typewriter {
+            from {
+                width: 0;
+            }
+            to {
+                width: 19rem;
+            }
+        }
+        @keyframes blinkTextCursor {
+            from {
+                border-right-color: rgba(255, 255, 255, 0.75);
+            }
+            to {
+                border-right-color: transparent;
+            }
+        }
+
         .revealContainer {
             text-decoration: none;
             color: inherit;
@@ -35,7 +68,8 @@
             }
             transition: all 0.2s ease-in-out;
         }
-        .revealContainer:hover, .revealContainer:focus {
+        .revealContainer:hover,
+        .revealContainer:focus {
             background-color: rgba(0, 0, 0, 0.5);
         }
         .centerLogo {
@@ -44,10 +78,12 @@
             // height:5em;
             transition: all ease 200ms;
             box-sizing: border-box;
-            overflow: hidden;
             cursor: pointer;
+            overflow: visible;
+            width: fit-content;
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 transform: scale(1.1);
             }
             &:active {
@@ -66,6 +102,17 @@
                 #FallstopLogoBW-Octagon {
                     stroke: $text-color;
                     fill: $deselected-background;
+                }
+            }
+            animation: flyfrombottom 1s ease-out 1  both normal ;
+            @keyframes flyfrombottom {
+                from {
+                    transform: translateY(30vh);
+                    opacity: 0;
+                }
+                to {
+                    width: translateY(0);
+                    opacity: 1;
                 }
             }
         }
@@ -144,7 +191,8 @@
                 padding: 0.3em;
                 transition: all 0.2s ease-in-out;
             }
-            a:hover, a:focus {
+            a:hover,
+            a:focus {
                 transform: scale(1.1);
                 background-color: $selected-background;
             }
@@ -174,7 +222,8 @@
                     letter-spacing: 0.2em;
                     font-size: 2.5rem;
                 }
-                &:hover, &:focus {
+                &:hover,
+                &:focus {
                     transform: scale(1.1);
                     background-color: $selected-background;
                 }
@@ -200,7 +249,7 @@
                 padding-left: 1em;
                 .aboutPersonalHeader {
                     font-size: $header-size;
-                    padding-top:0.5rem;
+                    padding-top: 0.5rem;
                     margin-bottom: 0.5em;
                 }
                 .aboutPersonalSubheader {
@@ -244,7 +293,8 @@
                                 top: 0.3em;
                             }
                         }
-                        &:hover, &:focus {
+                        &:hover,
+                        &:focus {
                             transform: scale(1.01);
                             background-color: $selected-background;
                         }
@@ -313,14 +363,13 @@
                 margin: 0;
                 .aboutQuickView {
                     border-right: none;
-                } 
-                .aboutPersonalInformation .aboutPersonalHeader{
+                }
+                .aboutPersonalInformation .aboutPersonalHeader {
                     padding-top: 1rem;
                 }
             }
         }
     }
-
 }
 
 @media (min-width: 1000px) {

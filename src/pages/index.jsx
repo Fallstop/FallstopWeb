@@ -9,7 +9,7 @@ import { SEO } from "../components/SEO";
 
 import "../styles/index.scss";
 
-function openNotARickRoll () {
+function openNotARickRoll() {
 	window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 }
 
@@ -17,11 +17,12 @@ const landingContainer = (
 	<div className="landingContainer">
 		<div className="content">
 			<h1 className="title">Jasper M-W</h1>
-			<p className="subtitle">Under Development.</p>
+			<p className="subtitle typewriterEffect">Under Development.</p>
+
 		</div>
 		<div className="centerLogo"
 			onClick={openNotARickRoll}
-			onKeyDown={  function handleKeyDown(e) { if (e.keyCode === 13 || e.keyCode === 32) { e.preventDefault(); openNotARickRoll();}}}
+			onKeyDown={function handleKeyDown(e) { if (e.keyCode === 13 || e.keyCode === 32) { e.preventDefault(); openNotARickRoll(); } }}
 			role="button"
 			tabIndex={0} >
 			<FallstopLogoBW />
