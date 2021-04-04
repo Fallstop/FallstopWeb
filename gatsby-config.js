@@ -64,6 +64,13 @@ module.exports = {
         plugins: [
           `gatsby-remark-reading-time`,
           {
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              terminal: 'carbon',
+              theme: 'dracula'
+            }
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               // It's important to specify the maxWidth (in pixels) of

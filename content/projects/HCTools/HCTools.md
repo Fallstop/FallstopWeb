@@ -72,14 +72,15 @@ Here is some overly obtuse example code:
 </script>
 ```
 
-## Is it currently working:
-Well, lets test it out: <span id="hcTimeTableDay"></span>
+## Is it currently working?
 
+Well, lets test it out by finding the current Timetable Day:
+<span id="hcTimeTableDay">Loading...</span>
 <script type="text/javascript">
     const messages = {
-        successfulPrefix: "Day ",
-        notASchoolDay: "Not a school day",
-        errorServerSide: "Internal Error",
+        successfulPrefix: "<code>Day ",
+        notASchoolDay: "<code>Not a school day</code>",
+        errorServerSide: "<code>Internal Error</code>",
     }
     let textSpan = document.getElementById("hcTimeTableDay");
     fetch("https://hctools.jmw.nz/api/gettimetableday")
@@ -88,7 +89,7 @@ Well, lets test it out: <span id="hcTimeTableDay"></span>
             console.log(data);
             if (data["isSchoolDay"]) {
                 console.log(data["currentDay"]);
-                textSpan.innerHTML = messages.successfulPrefix + data["currentDay"];
+                textSpan.innerHTML = messages.successfulPrefix + data["currentDay"] + "</code>";
             } else if (!data["isSchoolDay"]) {
                 textSpan.innerHTML = messages.notASchoolDay;
             }
