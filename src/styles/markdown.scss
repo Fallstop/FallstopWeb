@@ -3,15 +3,22 @@
 .markdownStyling {
     color: $text-color;
     h1 {
-        font-size: 3.5rem;
+        font-size: 4rem;
         font-family: "Josefin Sans", sans-serif;
         padding-top: 0.5rem;
+        text-decoration: underline $secondary-text-color 3px;
+        text-underline-offset: 5px;
     }
     h2 {
-        font-size: 2.5rem;
+        font-size: 3rem;
+        
     }
     h3 {
         font-size: 2rem;
+        font-weight: bold;
+    }
+    h4 {
+        font-size: 1.5rem;
         font-weight: bold;
     }
     a {

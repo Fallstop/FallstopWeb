@@ -1,4 +1,5 @@
 import React from "react"
+import InnerHTML from 'dangerously-set-html-content'
 import { graphql } from "gatsby"
 
 import StandardLayout from "../components/StandardLayout";
@@ -8,6 +9,7 @@ import "../styles/projects.scss";
 
 export default function Template({ data, }) {
 	const { frontmatter, html, fields } = data.markdownRemark;
+	
 	return (
 		<>
 			<SEO titleExt={frontmatter.title} description={frontmatter.description} />
@@ -23,9 +25,9 @@ export default function Template({ data, }) {
 						</span>
 					</div>
 				</div>
-				<div
+				<InnerHTML
 					className="projectContent markdownStyling"
-					dangerouslySetInnerHTML={{ __html: html }}
+					html={html}
 				/>
 			</StandardLayout>
 		</>

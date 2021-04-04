@@ -12,12 +12,17 @@ import "../styles/index.scss";
 function openNotARickRoll() {
 	window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 }
+function deactivateTypewriterEffect() {
+	var inputElement = document.getElementById("typingBoxSubtitle");
+	inputElement.setAttribute('style', 'border-right-color: transparent !important');
+	console.log("Yes.");
+}
 
 const landingContainer = (
 	<div className="landingContainer">
 		<div className="content">
 			<h1 className="title">Jasper M-W</h1>
-			<p className="subtitle typewriterEffect">Under Development.</p>
+			<input id="typingBoxSubtitle" className="subtitle typewriterEffect" defaultValue="Under Development." onChange={deactivateTypewriterEffect}></input>
 
 		</div>
 		<div className="centerLogo"

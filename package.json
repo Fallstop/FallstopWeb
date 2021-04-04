@@ -13,6 +13,7 @@
   "dependencies": {
     "@fontsource/josefin-sans": "^4.2.2",
     "@fontsource/open-sans": "^4.2.2",
+    "dangerously-set-html-content": "^1.0.8",
     "fs": "^0.0.1-security",
     "gatsby": "^2.24.67",
     "gatsby-background-image": "^1.2.0",
