@@ -15,6 +15,7 @@ HTTP API Route: https://hctools.jmw.nz/api/
 
 ### `gettimetableday/<?date>`
 > **Completed**
+
 The time table is completely disjointed from the actual calender, and jumps around a lot. So this API, with an optional date parameter (default is today), it will return a json object like this example:
 ```json
 { 
