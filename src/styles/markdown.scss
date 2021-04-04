@@ -11,7 +11,6 @@
     }
     h2 {
         font-size: 3rem;
-        
     }
     h3 {
         font-size: 2rem;
@@ -35,11 +34,17 @@
             display: list-item;
             list-style: disc;
             overflow-x: initial;
-
         }
     }
     deckgo-highlight-code {
         background-color: $deselected-background;
-        margin: 2em 0 ;
+        margin: 2em 0;
+    }
+    blockquote > * {
+        margin-left: 1em;
+        border-left: solid grey;
+        padding-left: 1rem;
+        box-sizing: content-box;
+        -webkit-box-sizing: content-box;
     }
 }
