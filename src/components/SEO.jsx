@@ -3,7 +3,7 @@ import React from 'react'
 import { GatsbySeo } from 'gatsby-plugin-next-seo';
 
 
-export function SEO (props) {
+export function SearchEngineOptimization (props) {
   console.log(props);
   let title = (props.titleExt !== undefined) ? 'Jasper M-W | '  + props.titleExt : 'Jasper M-W';
   let description = (props.description !== undefined) ? props.description : "Jasper Miller-Waugh's (Fallstop) portfolio";

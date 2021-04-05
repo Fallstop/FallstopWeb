@@ -5,7 +5,7 @@ import { graphql } from 'gatsby';
 import InfoContainer from "../components/Info";
 import StyledBackgroundSection from "../components/BackgroundSection"
 import { FallstopLogoBW } from "../components/SVGS"
-import { SEO } from "../components/SEO";
+import { SearchEngineOptimization } from "../components/SEO";
 
 import "../styles/index.scss";
 
@@ -52,7 +52,7 @@ export default function Home({ data, }) {
 	// const { siteTagline, siteTitle } = data.site.siteMetadata;
 	return (
 		<div>
-			<SEO />
+			<SearchEngineOptimization />
 			<div className="landingPage">
 
 				<StyledBackgroundSection>

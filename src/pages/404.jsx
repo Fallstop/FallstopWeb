@@ -1,11 +1,14 @@
 import React from "react";
-import { Header } from "../components/Header";
+import StandardLayout from "../components/StandardLayout";
+import { SearchEngineOptimization } from "../components/SEO";
 
 export default function Home() {
 	return (
-		<div className="home">
-			<Header />
-		Wow, a 404 page
-		</div>
-	)
+		<>
+		<SearchEngineOptimization/>
+			<StandardLayout className="NotFoundErrorPage">
+				<div className="title">Project Archive</div>
+			</StandardLayout>
+		</>
+	);
 };

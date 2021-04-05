@@ -8,9 +8,11 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     "siteTitle": "Jasper M-W",
-    "siteTagline": "Not a bot."
+    "siteTagline": "Not a bot.",
+    "siteURL": "https://jmw.nz"
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     "gatsby-image",
     "gatsby-background-image",
     "styled-components",
@@ -53,8 +55,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://jasper.qrl.nz',
-        sitemap: 'https://jasper.qrl.nz/sitemap.xml',
+        host: 'https://jmw.nz',
+        sitemap: 'https://jmw.nz/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },

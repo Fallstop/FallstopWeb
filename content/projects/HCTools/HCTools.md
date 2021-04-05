@@ -78,6 +78,7 @@ Here is some overly obtuse example code:
 Well, lets test it out by finding the current Timetable Day:
 <span id="hcTimeTableDay">Loading...</span>
 <script type="text/javascript">
+function getTimeTableDay() { 
     const messages = {
         successfulPrefix: "<code>Day ",
         notASchoolDay: "<code>Not a school day</code>",
@@ -99,10 +100,11 @@ Well, lets test it out by finding the current Timetable Day:
                 console.log(data["internalError"]);
                 textSpan.innerHTML = messages.errorServerSide;
             }
-            
         })
         .catch(error => {
             console.log("Error in gettimetableday API");
             textSpan.innerHTML = messages.errorServerSide;
         });
+}
+getTimeTableDay()
 </script>

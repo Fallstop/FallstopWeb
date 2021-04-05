@@ -1,7 +1,7 @@
 import React from "react";
 import StandardLayout from "../components/StandardLayout";
 import toolsContent from '../../content/tools.json';
-import { SEO } from "../components/SEO";
+import { SearchEngineOptimization } from "../components/SEO";
 
 import "../styles/tools.scss"
 
@@ -36,7 +36,7 @@ const ToolsContainer = () => {
 export default function Home() {
     return (
 		<>
-		<SEO titleExt="Tools" description="All the tools/platforms/hosts I use as part of my environment."/>
+		<SearchEngineOptimization titleExt="Tools" description="All the tools/platforms/hosts I use as part of my environment."/>
         <StandardLayout className="toolPage">
             <h2 className="header">Top Tools</h2>
             <div className="toolsContainer">
