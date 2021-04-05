@@ -6,6 +6,7 @@ import { GatsbySeo } from 'gatsby-plugin-next-seo';
 export function SearchEngineOptimization (props) {
   console.log(props);
   let title = (props.titleExt !== undefined) ? 'Jasper M-W | '  + props.titleExt : 'Jasper M-W';
+  console.log((props.description !== undefined) ? props.description : "Jasper Miller-Waugh's (Fallstop) portfolio");
   let description = (props.description !== undefined) ? props.description : "Jasper Miller-Waugh's (Fallstop) portfolio";
   return (
     <div>
@@ -15,7 +16,7 @@ export function SearchEngineOptimization (props) {
         language="en"
         openGraph={{
           title: 'Jasper M-W/Fallstop | Portfolio',
-          description: 'Jasper M-W | ' + {description},
+          description: 'Jasper M-W | ' + description,
           type: 'profile',
           profile: {
             firstName: 'Jasper',

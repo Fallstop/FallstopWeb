@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     "siteTitle": "Jasper M-W",
     "siteTagline": "Not a bot.",
-    "siteURL": "https://jmw.nz"
+    "siteUrl": "https://jmw.nz"
   },
   plugins: [
     `gatsby-plugin-sitemap`,
