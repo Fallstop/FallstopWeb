@@ -7,6 +7,7 @@ export function SearchEngineOptimization (props) {
   console.log(props);
   let title = (props.titleExt !== undefined) ? 'Jasper M-W | '  + props.titleExt : 'Jasper M-W';
   console.log((props.description !== undefined) ? props.description : "Jasper Miller-Waugh's (Fallstop) portfolio");
+
   let description = (props.description !== undefined) ? props.description : "Jasper Miller-Waugh's (Fallstop) portfolio";
   return (
     <div>
@@ -15,8 +16,8 @@ export function SearchEngineOptimization (props) {
         description={description}
         language="en"
         openGraph={{
-          title: 'Jasper M-W/Fallstop | Portfolio',
-          description: 'Jasper M-W | ' + description,
+          title: title,
+          description: description,
           type: 'profile',
           profile: {
             firstName: 'Jasper',
