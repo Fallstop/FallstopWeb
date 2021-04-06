@@ -25,14 +25,14 @@ export function SearchEngineOptimization (props) {
             username: 'fallstop',
             gender: 'male',
           },
-          // images: [
-          //   {
-          //     url: 'https://www.test.ie/images/profile.jpg',
-          //     width: 850,
-          //     height: 650,
-          //     alt: 'Profile Photo',
-          //   },
-          // ],
+          images: [
+            {
+              url: 'https://jmw.nz/icons/icon-512x512.png',
+              width: 512,
+              height: 512,
+              alt: 'Fallstop Logo',
+            },
+          ],
         }}
       />
     </div>
