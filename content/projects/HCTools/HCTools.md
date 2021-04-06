@@ -37,6 +37,38 @@ The daily notices are stored in the description of an google calendar event, not
     "cached": false, // Caching is not implemented yet.
 }
 ```
+
+### `getbelltimes/`
+> **Completed, without caching**
+
+Easy acess to the live, current bell times straight from the same datasource that the actual school bell uses. This API makes is easy to acess without having to worry about what part of the sheet to acess, and credentials to acess it.
+
+*Each number is mapped to each day (Zero Indexed)*
+```json
+{
+    "belltimes": {
+        "0": [
+            "08:43", "08:45",//...
+        ],
+        "1": [
+            "08:45", "09:35", //...
+        ],
+        "2": [
+            "08:43", "08:45",//...
+        ],
+        "3": [
+            "08:43", "08:45", //...
+        ],
+        "4": [
+            "08:43", "08:45", //...
+        ],
+        "5": [],
+        "6": []
+    },
+    "cached": false
+}
+```
+
 ## Example Code
 
 Here is some overly obtuse example code:
