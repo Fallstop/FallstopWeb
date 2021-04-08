@@ -28,7 +28,7 @@ module.exports = {
         // This object gets passed directly to the gtag config command
         // This config will be shared across all trackingIds
         gtagConfig: {
-          optimize_id: "G-VQTGL2MM5V",
+          optimize_id: "GTM-P7GSK6P",
           anonymize_ip: true,
           cookie_expires: 0,
         },
