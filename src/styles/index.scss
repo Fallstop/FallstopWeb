@@ -106,14 +106,34 @@
                 width: 15em;
                 #FallstopLogoBW-FailingLines * {
                     stroke: $text-color;
+                    stroke-dasharray: 60;
+                    stroke-dashoffset: 60;
+                    animation: dash 2s forwards ease;
+
                 }
                 #FallstopLogoBW-Text * {
                     fill: $text-color;
+                    opacity: 0;
+                    animation: fadeIn 1s forwards ease;
                 }
                 #FallstopLogoBW-Octagon {
                     stroke: $text-color;
                     fill: $deselected-background;
+                    stroke-dasharray: 550;
+                    stroke-dashoffset: 550;
+                    animation: dash 2s forwards ease;
                 }
+                
+                @keyframes dash {
+                  to {
+                    stroke-dashoffset: 0;
+                  }
+                }
+                @keyframes fadeIn {
+                    to {
+                      opacity: 1;
+                    }
+                  }
             }
             animation: flyfrombottom 1s ease-out 1  both normal ;
             @keyframes flyfrombottom {
