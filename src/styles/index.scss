@@ -95,7 +95,7 @@
                 background: $selected-background;
             }
             &:active {
-                transform: scale(1.8);
+                // transform: scale(1.8);
                 & #FallstopLogoBW-Octagon {
                     background: $selected-background;
                 }

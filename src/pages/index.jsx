@@ -3,14 +3,43 @@ import React from "react";
 import { graphql } from 'gatsby';
 
 import InfoContainer from "../components/Info";
-import StyledBackgroundSection from "../components/BackgroundSection"
+import { BackgroundSection } from "../components/BackgroundSection"
 import { FallstopLogoBW } from "../components/SVGS"
 import { SearchEngineOptimization } from "../components/SEO";
 
 import "../styles/index.scss";
 
-function openNotARickRoll() {
-	window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+
+function changeBackground() {
+	// var myDiv = document.getElementsByClassName("PrimaryBackground");
+	var style = document.createElement('style');
+	style.type = 'text/css';
+	style.id = "BackgroundChanger"
+	style.innerHTML = `
+	.PrimaryBackground:after {
+		transition: all ease 200ms;
+		background-image: url("https://source.unsplash.com/collection/wallpapers/?night,nature#`+Math.random()+`") !important;
+	}
+	.PrimaryBackground {
+		backdrop-filter: brightness(0.5);
+		
+	}
+	.InfoContainerBackground {
+		transition: all ease 200ms;
+		background-image: url("https://source.unsplash.com/collection/wallpapers/?night,nature#`+Math.random()+`") !important;
+	}
+	.InfoContainerBackground:before {
+		backdrop-filter: blur(20px) brightness(0.8)
+	}
+	`;
+	let existingStyle = document.getElementById("BackgroundChanger")
+	if (existingStyle === null) {
+		document.getElementsByTagName('head')[0].appendChild(style);
+	} else {
+		existingStyle.parentNode.replaceChild(style,existingStyle);
+	}
+
+
 }
 function deactivateTypewriterEffect() {
 	var inputElement = document.getElementById("typingBoxSubtitle");
@@ -26,8 +55,8 @@ const landingContainer = (
 
 		</div>
 		<div className="centerLogo"
-			onClick={openNotARickRoll}
-			onKeyDown={function handleKeyDown(e) { if (e.keyCode === 13 || e.keyCode === 32) { e.preventDefault(); openNotARickRoll(); } }}
+			onClick={changeBackground}
+			onKeyDown={function handleKeyDown(e) { if (e.keyCode === 13 || e.keyCode === 32) { e.preventDefault(); changeBackground(); } }}
 			role="button"
 			tabIndex={0} >
 			<FallstopLogoBW />
@@ -55,10 +84,10 @@ export default function Home({ data, }) {
 			<SearchEngineOptimization />
 			<div className="landingPage">
 
-				<StyledBackgroundSection>
+				<BackgroundSection className="PrimaryBackground section">
 					{landingContainer}
 					{horizontalRule}
-				</StyledBackgroundSection>
+				</BackgroundSection>
 				<div className="InfoContainerBackground"></div>
 				<InfoContainer />
 

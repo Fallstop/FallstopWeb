@@ -1,14 +1,8 @@
 
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import styled from 'styled-components'
 
 import BackgroundImage from 'gatsby-background-image'
-// Use the following to support legacy browsers like IE11:
-// import BackgroundImage from 'gatsby-background-image-es5'
-import { generateMedia } from 'styled-media-query'
-
-const media = generateMedia()
 
 /**
  * In this functional component a <BackgroundImage />  is compared to an <Img />.
@@ -17,7 +11,7 @@ const media = generateMedia()
  * @return {*}
  * @constructor
  */
-const BackgroundSection = ({ className, children }) => {
+export const BackgroundSection = ({ className, children }) => {
   const { desktop } = useStaticQuery(
     graphql`
       query {
@@ -44,12 +38,12 @@ const BackgroundSection = ({ className, children }) => {
           backgroundColor={`#040e18`}
           // Title get's passed to both container and noscriptImg.
           
-          // style={{
-          //   // Defaults are overwrite-able by setting one of the following:
-          //   // backgroundSize: '',
-          //   // backgroundPosition: '',
-          //   // backgroundRepeat: '',
-          // }}
+          style={{
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: "fixed",
+            backgroundSize: "cover"
+          }}
           // To "force" the classic fading in of every image (especially on
           // imageData change for fluid / fixed) by setting `soft` on `fadeIn`:
           // fadeIn={`soft`}
@@ -65,35 +59,3 @@ const BackgroundSection = ({ className, children }) => {
     </div>
   )
 }
-
-const StyledBackgroundSection = styled(BackgroundSection)`
-// position: absolute !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  
-  
-  // These three crucial styles (if existing) are directly parsed and added to 
-  // the pseudo-elements without further ado (except when overwritten).
-  //background-repeat: repeat-y;
-  //background-position: left center;
-  //background-size: cover;
-  
-  // With media-queries you have to overwrite the default options (see style={{}} above).
-  // ${media.lessThan('large')`
-  //   background-size: cover;
-  //   &:after, &:before {
-  //     background-size: contain;
-  //   }
-  // `}
-  
-  // For pseudo-elements you have to overwrite the default options (see style={{}} above).
-  // See: https://github.com/timhagn/gatsby-background-image/#styling--passed-through-styles 
-  //&:after, &:before {
-  //   background-clip: content-box;
-  //   background-size: contain;
-  //}
-`
-
-export default StyledBackgroundSection
