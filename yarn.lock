@@ -6115,14 +6115,6 @@ gatsby-page-utils@^1.3.0-next.0:
     lodash "^4.17.21"
     micromatch "^4.0.2"
 
-gatsby-plugin-google-gtag@^3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-3.2.0.tgz#8326133ef676a9059a63091a11c6b786ac21a657"
-  integrity sha512-NmKv9bRkdxgmkGUIpK1Tk0sgnggU6WDY+oH+nQG1+gs1yJqW6g1d3zzFKf/m0c5A/44Eqb7f+6h8PTjIL/XoVw==
-  dependencies:
-    "@babel/runtime" "^7.12.5"
-    minimatch "^3.0.4"
-
 gatsby-plugin-manifest@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-3.2.0.tgz#512938442542f95ffc8e0cbe5df19db719e935d9"
