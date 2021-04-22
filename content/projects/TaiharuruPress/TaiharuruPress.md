@@ -18,4 +18,4 @@ The entire site took around about one day of work, from go ahead to finish, endi
 
 ## Design
 
-The whole thing is a heavily modified version of [gatsby-starter-morning-dew](https://github.com/maxpou/gatsby-starter-morning-dew), it is a very nice template but I had to convert it from a blog to a Book cataloug.
+The whole thing is a heavily modified version of [gatsby-starter-morning-dew](https://github.com/maxpou/gatsby-starter-morning-dew), it is a very nice template but I had to convert it from a blog to a Book catalog.
