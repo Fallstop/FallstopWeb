@@ -9,7 +9,7 @@ const ProjectContainer = () => {
 		graphql` {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          limit: 4
+          limit: 6
         ) {
           edges {
             node {
