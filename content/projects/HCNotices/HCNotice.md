@@ -27,4 +27,4 @@ The other inspiration of this site is that I wanted to learn Svelte, and this wa
 
 ## Design
 
-The design was focused on maxminising comfitble reading on all devices, enviroments and prefrences. This meant focusing on a simple layout that could respond well to mobile users. I also added a toggleable dark mode, which defualted to the users device settings.
+The design was focused on maximizing comfortable reading on all devices, environments and preferences. This meant focusing on a simple layout that could respond well to mobile users. I also added a toggleable dark mode, which defaulted to the users device settings.

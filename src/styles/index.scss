@@ -22,17 +22,17 @@
             color: $text-color;
             position: relative;
             top: 50%;
-            width: 24em;
+            width: calc(var(--message-width)*1rem);
             margin: 0 auto;
             padding: 0;
             border-right: 2px solid rgba(255, 255, 255, 0.75);
             font-size: 180%;
             text-align: center;
             white-space: nowrap;
-            overflow: hidden;
+            overflow: visible;
             transform: translateY(-50%);
             font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-            animation: typewriter 1s steps(19) 0.2s 1 both normal, blinkTextCursor 500ms steps(19) infinite normal;
+            animation: typewriter 1s steps(var(--message-length)) 0.2s 1 both normal, blinkTextCursor 500ms steps(var(--message-length)) infinite normal;
             &:Focus {
                 border-right-color: transparent !important;
             }
@@ -43,7 +43,7 @@
                 width: 0;
             }
             to {
-                width: 19rem;
+                width: calc(var(--message-width)*1rem);
             }
         }
         @keyframes blinkTextCursor {
