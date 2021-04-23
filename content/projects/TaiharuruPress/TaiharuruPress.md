@@ -6,7 +6,7 @@ description: "Taiharuru Press Website - Speedrunning a high proformance horzonta
 ---
 > #### [Github: https://github.com/Fallstop/TaiharuruPress](https://github.com/Fallstop/TaiharuruPress)
 
-> #### [Website: https://taiharurupress.jmw.nz](https://taiharurupress.jmw.nz/)
+> #### [Website: https://taiharuru.co.nz](https://taiharuru.co.nz/)
 
 ## Framework
 
@@ -18,4 +18,4 @@ The entire site took around about one day of work, from go ahead to finish, endi
 
 ## Design
 
-The whole thing is a heavily modified version of [gatsby-starter-morning-dew](https://github.com/maxpou/gatsby-starter-morning-dew), it is a very nice template but I had to convert it from a blog to a Book catalog.
+The whole thing is a modified version of [gatsby-starter-morning-dew](https://github.com/maxpou/gatsby-starter-morning-dew), it is a very nice template but I had to convert it from a blog to a Book catalog.

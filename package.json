@@ -2,8 +2,8 @@
   "name": "jasper-portfolio",
   "private": true,
   "description": "Portfolio for Jasper M-W",
-  "version": "0.1.0",
-  "license": "0BSD",
+  "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
     "deploy": "cowsay No.",
     "develop": "gatsby develop",

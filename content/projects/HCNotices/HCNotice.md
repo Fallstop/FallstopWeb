@@ -27,4 +27,4 @@ The other inspiration of this site is that I wanted to learn Svelte, and this wa
 
 ## Design
 
-The whole thing is a heavily modified version of [gatsby-starter-morning-dew](https://github.com/maxpou/gatsby-starter-morning-dew), it is a very nice template but I had to convert it from a blog to a Book catalog.
+The design was focused on maxminising comfitble reading on all devices, enviroments and prefrences. This meant focusing on a simple layout that could respond well to mobile users. I also added a toggleable dark mode, which defualted to the users device settings.
