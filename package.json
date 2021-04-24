@@ -7,7 +7,10 @@
   "scripts": {
     "deploy": "cowsay No.",
     "develop": "gatsby develop",
+    "prod": "gatsby build && gatsby serve",
+    "serve": "gatsby serve",
     "dev": "gatsby develop",
+    "watch:prod": "nodemon -w ./src/ -e \"scss js jsx json md\" --exec \"yarn prod\"",
     "build": "gatsby build"
   },
   "dependencies": {
@@ -50,6 +53,7 @@
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.7",
     "prettier": "2.2.1"
   },
   "repository": {

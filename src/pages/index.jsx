@@ -55,13 +55,27 @@ function getRandomInt(max) {
 
 function LandingContainer() {
 	let messageOfTheDay = MODData[getRandomInt(MODData.length - 1)]
+	console.log(messageOfTheDay);
+
+	// Hack because gatsby helpfully caches inline styles in run time
+	if (typeof window !== `undefined`) { // Only runs in browser
+		let style = document.createElement('style');
+		// Styling for typingBoxSubtitle, which might not exist yet
+		style.innerHTML = `
+		:root {
+			--message-length: ${messageOfTheDay.text.length};
+			--message-width: ${messageOfTheDay.width};
+		}
+		`;
+		document.head.appendChild(style);
+	}
 
 
 	return (
 		<div className="landingContainer">
 			<div className="content">
 				<h1 className="title">Jasper M-W</h1>
-				<input id="typingBoxSubtitle" className="subtitle typewriterEffect" style={{"--message-length": messageOfTheDay.text.length, "--message-width": messageOfTheDay.width}} defaultValue={messageOfTheDay.text} onChange={deactivateTypewriterEffect}></input>
+				<input id="typingBoxSubtitle" className="subtitle typewriterEffect" defaultValue={messageOfTheDay.text} onChange={deactivateTypewriterEffect}></input>
 
 			</div>
 			<div className="centerLogo"
