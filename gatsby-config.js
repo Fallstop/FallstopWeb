@@ -12,6 +12,7 @@ module.exports = {
     "siteUrl": "https://jmw.nz"
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
     "gatsby-image",
     "gatsby-background-image",

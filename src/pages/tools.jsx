@@ -2,6 +2,8 @@ import React from "react";
 import StandardLayout from "../components/StandardLayout";
 import toolsContent from '../../content/tools.json';
 import { SearchEngineOptimization } from "../components/SEO";
+import {Helmet} from 'react-helmet'
+
 
 import "../styles/tools.scss"
 
@@ -37,6 +39,10 @@ export default function Home() {
     return (
 		<>
 		<SearchEngineOptimization titleExt="Tools" description="All the tools/platforms/hosts I use as part of my environment."/>
+		<Helmet>
+				{/* Cloudflare Analytics */}
+				<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "97acb8c56e6d419fb2f579b634165387"}'></script>
+			</Helmet>
         <StandardLayout className="toolPage">
             <h2 className="header">Top Tools</h2>
             <div className="toolsContainer">

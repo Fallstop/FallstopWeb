@@ -1,13 +1,13 @@
 import React from "react";
 
 import { graphql } from 'gatsby';
+import {Helmet} from 'react-helmet'
 
 import InfoContainer from "../components/Info";
 import { BackgroundSection } from "../components/BackgroundSection"
 import { FallstopLogoBW } from "../components/SVGS"
 import { SearchEngineOptimization } from "../components/SEO";
 import MODData from '../../content/mod.json';
-
 
 import "../styles/index.scss";
 
@@ -107,6 +107,10 @@ export default function Home({ data, }) {
 	return (
 		<div>
 			<SearchEngineOptimization />
+			<Helmet>
+				{/* Cloudflare Analytics */}
+				<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "97acb8c56e6d419fb2f579b634165387"}'></script>
+			</Helmet>
 			<div className="landingPage">
 
 				<BackgroundSection className="PrimaryBackground section">
