@@ -2,16 +2,18 @@
 slug: "/projects/hc-tools"
 date: "2021-04-04"
 title: "HC API Tools"
-description: "Simple to use API to access the mess of Huanui Collage Public data with ease."
+description: "Simple to use API Gateway to access the mess of Huanui Collage Public data with ease."
 ---
 ## Links
-Github: https://github.com/Fallstop/HC-API-Tools
+ - Github: [HC-API-Tools](https://github.com/Fallstop/HC-API-Tools)
+ - Example Use Case: [HCNotices](/projects/hc-notices)
+
 
 # Why this is a thing
-Because most of schools data about what events are coming, and what time table day it is, etc is posted on a google calender, which is non-machine friendly with a weird blend of timezones and API keys etc and non-human friendly because it is overly cluttered, also *no calender ever should have bulk text descriptions*. So I have made a simple open-source API wrapper.
+Because most of schools data about what events are coming, and what time table day it is, etc is posted on a google calender, which is non-machine friendly with a weird blend of timezones and API keys etc and non-human friendly because it is overly cluttered, also *no calender ever should have bulk text descriptions*. So I have made a simple open-source API Gateway.
 
 ## Methods
-HTTP API Route: https://hctools.jmw.nz/api/
+HTTP API Route: `https://hctools.jmw.nz/api/`
 
 ### `gettimetableday/<?date>`
 > **Completed**
@@ -41,7 +43,7 @@ The daily notices are stored in the description of an google calendar event, not
 ### `getbelltimes/`
 > **Completed, without caching**
 
-Easy acess to the live, current bell times straight from the same datasource that the actual school bell uses. This API makes is easy to acess without having to worry about what part of the sheet to acess, and credentials to acess it.
+Easy access to the live, current bell times straight from the same datasource that the actual school bell uses. This API makes is easy to access without having to worry about what part of the sheet to access, and credentials to access it.
 
 *Each number is mapped to each day (Zero Indexed)*
 ```json

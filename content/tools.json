@@ -20,7 +20,7 @@
                     "description": "Open-source electronic prototyping platform enabling users to create interactive electronic objects. "
                 },
                 {
-                    "name": "HTML/CSS/JS/SCSS/JSX...",
+                    "name": "HTML/CSS/SCSS/JS/TS/JSX...",
                     "description": "All fundamental web languages."
                 },
                 {
@@ -28,8 +28,8 @@
                     "description": "Dart is a client-optimized language for fast apps on any platform."
                 },
                 {
-                    "name": "MySQL",
-                    "description": "MySQL is an open-source relational database management system."
+                    "name": "SQL",
+                    "description": "SQL stands for Structured Query Language, it is used for relational database management systems."
                 },
                 {
                     "name": "PHP",
@@ -50,7 +50,11 @@
                 },
                 {
                     "name": "In house compute",
-                    "description": "Good old In-House compute, I manage 3 desktop servers and 2 rack mount servers running everything from Windows Server, to more commonly Ubuntu Server to Free-BSD."
+                    "description": "Good old In-House compute, I manage far to many servers. 3x in a CapRover Swarm (Mix of Ubuntu Server and Fedora Server), Windows Domain Server and a FreeBSD NAS"
+                },
+                {
+                    "name": "Cloudflare Pages",
+                    "description": "Cloudflare Pages is a JAM stack platform for developers to collaborate and deploy websites."
                 }
             ]
         },
@@ -85,6 +89,10 @@
                 {
                     "name": "Gatsby",
                     "description": "A static site generator built on react and GraphQL (It's what this site is built on)."
+                },
+                {
+                    "name": "Svelte",
+                    "description": "A really powerful webapp framework to easily generate UIs."
                 },
                 {
                     "name": "Wordpress (The CMS)",
