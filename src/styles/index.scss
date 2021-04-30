@@ -21,16 +21,15 @@
         #typingBoxSubtitle {
             color: $text-color;
             position: relative;
+            resize: none;
             top: 50%;
             width: calc(var(--message-width)*1rem);
             margin: 0 auto;
             padding: 0;
             border-right: 2px solid rgba(255, 255, 255, 0.75);
-            font-size: 180%;
+            font-size: 1.6rem;
             text-align: center;
-            white-space: nowrap;
-            overflow: visible;
-            transform: translateY(-50%);
+            overflow: hidden;
             font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
             animation: typewriter 1s steps(var(--message-length)) 0.2s 1 both normal, blinkTextCursor 500ms steps(var(--message-length)) infinite normal;
             &:Focus {
@@ -410,5 +409,16 @@
         .aboutMe {
             max-width: 70%;
         }
+        .landingContainer #typingBoxSubtitle {
+            height: 1.6rem;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .landingPage .landingContainer #typingBoxSubtitle {
+        max-width: 100vw;
+        height: max-content;
+        border-right-color: transparent !important;
     }
 }

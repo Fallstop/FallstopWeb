@@ -75,7 +75,7 @@ function LandingContainer() {
 		<div className="landingContainer">
 			<div className="content">
 				<h1 className="title">Jasper M-W</h1>
-				<input id="typingBoxSubtitle" className="subtitle typewriterEffect" defaultValue={messageOfTheDay.text} onChange={deactivateTypewriterEffect}></input>
+				<textarea id="typingBoxSubtitle" wrap="soft" className="subtitle typewriterEffect" defaultValue={messageOfTheDay.text} onChange={deactivateTypewriterEffect}></textarea>
 
 			</div>
 			<div className="centerLogo"
