@@ -36,11 +36,21 @@
             overflow-x: initial;
         }
     }
+    ol {
+        // list-style: disc outside none;
+        padding-left: 40px;
+
+        li {
+            display: list-item;
+            list-style-type: lower-alpha;
+            overflow-x: initial;
+        }
+    }
     deckgo-highlight-code {
         background-color: $deselected-background;
         margin: 2em 0;
     }
-    blockquote > * {
+    blockquote {
         margin-left: 1em;
         border-left: solid grey;
         padding-left: 1rem;
