@@ -23,25 +23,23 @@ The time table is completely disjointed from the actual calender, and jumps arou
 { 
     "currentDay": 10, // Returns the current day, not returned if Day X event was missing
     "isSchoolDay": true, // Returns true if Day X event was there, false if it was missing 
-    "cached": true, // If the data was pulled from on server cache
     "date": "2069-04-20" // Date requested
 }
 ```
 
 ### `getdailynotice/<?date>`
-> **Completed, without caching**
+> **Completed**
 
 The daily notices are stored in the description of an google calendar event, not very easy to read due to the small box. This API method makes it easy to retrieve the notice to display in another webapp.
 ```json
 { 
     "noticeText": "Wow yes notice<br>Remember to filter the HTML before using it!", // Returns the current day, not returned if Day X event was missing
     "isSchoolDay": true, // Returns true if Daily Notice event was there, false if it was missing 
-    "cached": false, // Caching is not implemented yet.
 }
 ```
 
 ### `getbelltimes/`
-> **Completed, without caching**
+> **Completed**
 
 Easy access to the live, current bell times straight from the same datasource that the actual school bell uses. This API makes is easy to access without having to worry about what part of the sheet to access, and credentials to access it.
 
@@ -67,7 +65,6 @@ Easy access to the live, current bell times straight from the same datasource th
         "5": [],
         "6": []
     },
-    "cached": false
 }
 ```
 
