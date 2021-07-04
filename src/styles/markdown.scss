@@ -56,5 +56,9 @@
         padding-left: 1rem;
         box-sizing: content-box;
         -webkit-box-sizing: content-box;
+        margin-bottom: 2rem;
+        & > * {
+            margin: 0;
+        }
     }
 }
