@@ -68,10 +68,10 @@ const AboutMe = () => {
 				<h3 className="aboutName">Jasper Miller&#x2011;Waugh</h3>
 				<span className="aboutUsername">Fallstop</span>
 				<div className="aboutLinks">
-					<a href="mailto:jasper@qrl.nz" target="__none" className="tooltip">
+					<a href="mailto:contact@jmw.nz" target="__none" className="tooltip">
 						<span className="tooltiptext">Wow</span>
 						<div className="aboutLinkItem">
-							<span className="aboutLinkName">Email - <span className="aboutLinkNameSubtext">jasper@qrl.nz</span></span>
+							<span className="aboutLinkName">Email - <span className="aboutLinkNameSubtext">contact@jmw.nz</span></span>
 							<span className="aboutLinkIcon">
 								<MailIcon />
 							</span>

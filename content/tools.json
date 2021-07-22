@@ -30,10 +30,6 @@
                 {
                     "name": "SQL",
                     "description": "SQL stands for Structured Query Language, it is used for relational database management systems."
-                },
-                {
-                    "name": "PHP",
-                    "description": "PHP is a general-purpose scripting language especially suited to web development."
                 }
             ]
         },
@@ -50,7 +46,7 @@
                 },
                 {
                     "name": "In house compute",
-                    "description": "Good old In-House compute, I manage far to many servers. 3x in a CapRover Swarm (Mix of Ubuntu Server and Fedora Server), Windows Domain Server and a FreeBSD NAS"
+                    "description": "Good old In-House compute, I manage far to many servers. 3x in a Docker/CapRover Swarm (Mix of Ubuntu Server and Fedora Server), Windows Domain Server and a FreeBSD NAS"
                 },
                 {
                     "name": "Cloudflare Pages",
