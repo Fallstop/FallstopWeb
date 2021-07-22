@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 // InnerHTML component
 export function InnerHTMLButScript(props) {
     const { html, className } = props;
-    const divRef = useRef(null);
+    const divRef = useRef(0);
 
     useEffect(() => {
         const parsedHTML = document.createRange().createContextualFragment(html);

@@ -1,6 +1,6 @@
 ---
 slug: "/projects/bf-web"
-date: "2021-06-04"
+date: "2021-06-02"
 title: "Brainfuck Web"
 description: "BF-Web is a program allows you to use brainfuck for web development"
 ---
