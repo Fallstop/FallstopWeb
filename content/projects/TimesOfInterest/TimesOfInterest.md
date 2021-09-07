@@ -1,6 +1,6 @@
 ---
 slug: "/projects/times-of-interest"
-date: "2021-08-05"
+date: "2021-09-01"
 title: "Times Of Interest"
 description: "A group rickroll experience like no other."
 ---
