@@ -87,8 +87,8 @@
                     "description": "A static site generator built on react and GraphQL (It's what this site is built on)."
                 },
                 {
-                    "name": "Svelte",
-                    "description": "A really powerful webapp framework to easily generate UIs."
+                    "name": "Svelte/Svelte Kit",
+                    "description": "A very powerful webapp framework to easily generate reactive UIs."
                 },
                 {
                     "name": "Wordpress (The CMS)",

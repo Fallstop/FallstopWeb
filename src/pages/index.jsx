@@ -68,14 +68,15 @@ function LandingContainer() {
 		}
 		`;
 		document.head.appendChild(style);
-	}
 
+		document.getElementById("typingBoxSubtitle").value = messageOfTheDay.text
+	}
 
 	return (
 		<div className="landingContainer">
 			<div className="content">
 				<h1 className="title">Jasper M-W</h1>
-				<textarea id="typingBoxSubtitle" wrap="soft" className="subtitle typewriterEffect" defaultValue={messageOfTheDay.text} onChange={deactivateTypewriterEffect}></textarea>
+				<textarea id="typingBoxSubtitle" wrap="soft" className="subtitle typewriterEffect" onChange={deactivateTypewriterEffect}></textarea>
 
 			</div>
 			<div className="centerLogo"

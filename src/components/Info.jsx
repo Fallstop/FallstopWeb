@@ -100,15 +100,15 @@ const AboutMe = () => {
 				<h3 className="aboutPersonalHeader">Confirmed Bot</h3>
 				<div className="aboutPersonalSubheader">I am a software developer/stack overflow expert that likes to experiment in new technologies.</div>
 
-				I am currently studying in Huanui Collage (year eleven) and contract part time for website design/various other things. I am also a full time
+				I am currently studying in Huanui Collage (Y11) and contract part time for website design/various other things. I am also a full time
 				member of <a href="https://questionable.org.nz" style={{ color: "#007acc" }} target="__none">Questionable Research Labs</a>,
 				and you might also find many of my projects are supported by them and their members.
 				<br /><br />
-				But that is enough about my life, the real question is what tools I use, and here is the answers:
+				I also love learning and using new tools:
 				<div className="aboutLinks centerAlign">
 					<Link to="/tools">
 						<div className="aboutLinkItem">
-							<span className="aboutLinkName">Tools</span>
+							<span className="aboutLinkName">My Tools</span>
 							<span className="aboutLinkIcon"><ToolsIcon /></span>
 						</div>
 					</Link>
