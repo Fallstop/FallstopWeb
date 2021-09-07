@@ -15,16 +15,19 @@
     h3 {
         font-size: 2rem;
         font-weight: bold;
+        margin-top: 1.5rem;
+
     }
     h4 {
         font-size: 1.5rem;
         font-weight: bold;
+        margin-top: 1rem;
     }
     a {
         color: $link-color;
     }
     p {
-        margin-bottom: 2rem;
+        margin-bottom: 0.75rem;
     }
     ul {
         // list-style: disc outside none;
