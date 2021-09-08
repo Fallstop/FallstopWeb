@@ -1,4 +1,36 @@
 @import "main.scss";
+@keyframes flyfrombottom {
+    from {
+        transform: translateY(30vh);
+
+        opacity: 0;
+
+    }
+    to {
+        width: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes flyfromtop {
+    from {
+        transform: translateY(-10vh);
+        opacity: 0;
+
+    }
+    to {
+        width: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 .landingPage {
     text-align: center;
@@ -8,6 +40,7 @@
     h1,
     h2,
     h3 {
+        animation: flyfromtop 1s ease-out 1  both normal ;
         font-family: "Josefin Sans", sans-serif;
     }
     p {
@@ -17,6 +50,7 @@
     .landingContainer {
         height: 100vh;
         width: 100vw;
+        overflow: hidden;
 
         #typingBoxSubtitle {
             color: $text-color;
@@ -32,6 +66,7 @@
             overflow: hidden;
             font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
             animation: typewriter 1s steps(var(--message-length)) 0.2s 1 both normal, blinkTextCursor 500ms steps(var(--message-length)) infinite normal;
+            animation: flyfromtop 1s ease-out 1  both normal;
             &:Focus {
                 border-right-color: transparent !important;
             }
@@ -70,6 +105,7 @@
                 position: relative;
             }
             transition: all 0.2s ease-in-out;
+            animation: fadein 1s ease-out 1  both normal
         }
         .revealContainer:hover,
         .revealContainer:focus {
@@ -135,16 +171,7 @@
                   }
             }
             animation: flyfrombottom 1s ease-out 1  both normal ;
-            @keyframes flyfrombottom {
-                from {
-                    transform: translateY(30vh);
-                    opacity: 0;
-                }
-                to {
-                    width: translateY(0);
-                    opacity: 1;
-                }
-            }
+            
         }
     }
     .InfoContainerBackground {
@@ -209,13 +236,15 @@
         text-align: center;
         .projectSeeMore {
             overflow: hidden;
-            margin: 4em;
+            
 
             a {
                 display: inline-block;
+                margin-top: 2em;
 
                 font-size: 3rem;
-                border: transparent;
+                border: 5px solid white;
+
                 border-radius: 1rem;
                 background-color: $deselected-background;
                 padding: 0.3em;
@@ -347,6 +376,27 @@
             display: flex;
         }
     }
+}
+@media (max-width: 400px) {
+    .projectsContainer{
+         .projectsFlex a .projectBox {
+            margin: 0.5em 0 !important;
+            width: 60vw !important;
+            height: 4em !important;
+            padding: 1rem !important;
+            .projectTitle {
+                font-size: 1.5rem !important;
+            }
+        }
+        .projectSeeMore {
+            margin: 0.5em auto !important;
+            width: 60vw !important;
+            padding: 1rem !important;
+            a {
+                font-size: 2rem !important;
+            }
+        }
+    } 
 }
 
 @media (max-width: 700px) {
