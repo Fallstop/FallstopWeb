@@ -53,24 +53,31 @@ function getRandomInt(max) {
 	return Math.floor(Math.random() * max);
 }
 
-function LandingContainer() {
-	let messageOfTheDay = MODData[getRandomInt(MODData.length - 1)]
-	console.log(messageOfTheDay);
-
+async function loadInputBox() {
+	
 	// Hack because gatsby helpfully caches inline styles in run time
 	if (typeof window !== `undefined`) { // Only runs in browser
-		let style = document.createElement('style');
-		// Styling for typingBoxSubtitle, which might not exist yet
-		style.innerHTML = `
-		:root {
-			--message-length: ${messageOfTheDay.text.length};
-			--message-width: ${messageOfTheDay.width};
-		}
-		`;
-		document.head.appendChild(style);
+		let messageOfTheDay = MODData[getRandomInt(MODData.length - 1)];
+		let inputBox = document.getElementById("typingBoxSubtitle")
+		if (inputBox!==null) {
+			inputBox.defaultValue = messageOfTheDay.text
+			let style = document.createElement('style');
+			// Styling for typingBoxSubtitle, which might not exist yet
+			style.innerHTML = `
+			:root {
+				--message-length: ${messageOfTheDay.text.length};
+				--message-width: ${messageOfTheDay.width};
+				--message-text: ${messageOfTheDay.text}
+			}
+			`;
+			document.head.appendChild(style);
+		}	
 
-		document.getElementById("typingBoxSubtitle").value = messageOfTheDay.text
 	}
+}
+
+function LandingContainer() {
+	loadInputBox()
 
 	return (
 		<div className="landingContainer">
