@@ -60,13 +60,13 @@
             width: calc(var(--message-width)*1rem);
             margin: 0 auto;
             padding: 0;
+            word-break: break-all;
             border-right: 2px solid rgba(255, 255, 255, 0.75);
             font-size: 1.6rem;
             text-align: center;
             overflow: hidden;
             font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-            animation: typewriter 1s steps(var(--message-length)) 0.2s 1 both normal, blinkTextCursor 500ms steps(var(--message-length)) infinite normal;
-            animation: flyfromtop 1s ease-out 1  both normal;
+            animation: typewriter 1s steps(var(--message-length)) 0.2s 1 both normal, blinkTextCursor 500ms steps(var(--message-length)) infinite normal,flyfromtop 1s ease-out 1  both normal;
             &:Focus {
                 border-right-color: transparent !important;
             }
