@@ -2,7 +2,7 @@
 slug: "/projects/times-of-interest"
 date: "2021-09-01"
 title: "Times Of Interest"
-description: "A group rickroll experience like no other."
+description: "Govhack Entry that visualizes the all the COVID-19 locations of interest in a intuitive timeline/map combo."
 ---
 
 ![NodeJs](https://img.shields.io/badge/Powered%20By-Svelte-f7311b?style=for-the-badge)
