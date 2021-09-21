@@ -57,7 +57,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://jmw.nz',
-        sitemap: 'https://jmw.nz/sitemap.xml',
+        sitemap: 'https://jmw.nz/sitemap/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
