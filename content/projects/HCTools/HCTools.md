@@ -43,7 +43,7 @@ The daily notices are stored in the description of an google calendar event, not
 
 Easy access to the live, current bell times straight from the same datasource that the actual school bell uses. This API makes is easy to access without having to worry about what part of the sheet to access, and credentials to access it.
 
-*Each number is mapped to each day (Zero Indexed)*
+*Each number is mapped to each day (zero indexed, week starts on monday)*
 ```json
 {
     "belltimes": {
