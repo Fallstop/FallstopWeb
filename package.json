@@ -14,7 +14,7 @@
     "build": "yarn build:images && yarn build:gatsby",
     "build:gatsby": "gatsby build",
     "build:images": "node ./openGraph/build.mjs",
-    "build:images:watch": "nodemon -w ./openGraph/ ./openGraph/build.mjs"
+    "watch:build:images": "nodemon -w ./openGraph/ ./openGraph/build.mjs"
   },
   "dependencies": {
     "@deckdeckgo/highlight-code": "^3.3.1",
