@@ -8,7 +8,7 @@ export function SearchEngineOptimization (props) {
   let title = (props.titleExt !== undefined) ? 'Jasper M-W | '  + props.titleExt : 'Jasper M-W';
   console.log((props.description !== undefined) ? props.description : "Jasper Miller-Waugh's (Fallstop) portfolio");
 	let ogImage = `https://jmw.nz${props.ogImage}`;
-	if (typeof ogImage==="undefined") {
+	if (typeof props.ogImage==="undefined") {
 		ogImage = 'https://jmw.nz/OG_front_page.jpg';
 	}
   console.log("ogImage:",ogImage)
@@ -30,12 +30,6 @@ export function SearchEngineOptimization (props) {
             gender: 'male',
           },
           images: [
-            {
-              url: 'https://jmw.nz/icons/icon-512x512.png',
-              width: 512,
-              height: 512,
-              alt: 'Fallstop Logo',
-            },
             {
               url: ogImage,
               width: 1200,
