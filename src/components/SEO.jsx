@@ -37,6 +37,9 @@ export function SearchEngineOptimization (props) {
             },
           ],
         }}
+        twitter={{
+          cardType: 'summary_large_image',
+        }}
       />
     </div>
   )
