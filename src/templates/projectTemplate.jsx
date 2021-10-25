@@ -17,7 +17,7 @@ export default function Template({ data, }) {
 
 	return (
 		<>
-			<SearchEngineOptimization titleExt={frontmatter.title} description={frontmatter.description} />
+			<SearchEngineOptimization titleExt={frontmatter.title} description={frontmatter.description} ogImage={fields.ogimage}/>
 			<Helmet>
 				{/* Cloudflare Analytics */}
 				<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "97acb8c56e6d419fb2f579b634165387"}'></script>
@@ -56,6 +56,7 @@ export const pageQuery = graphql`
 				readingTime {
 					text
 				}
+				ogimage
 			}
 
 		}

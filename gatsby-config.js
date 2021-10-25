@@ -95,27 +95,6 @@ module.exports = {
         }
       }
     },
-    // {
-    //   resolve: "gatsby-plugin-seo",
-    //   options: {
-    //     siteName: "Jasper M-W",
-    //     siteUrl: "https://jmw.nz",
-    //     defaultSiteImage: "/static/FallstopLogo.png",
-    //     globalSchema: `{
-    //       "@context": "https://schema.org/",
-    //       "@type": "Person",
-    //       "defaultSiteImage": "/static/FallstopLogo.png",
-    //       "name": "Jasper Miller-Waugh",
-    //       "url": "https://jmw.nz",
-    //       "image": "",
-    //       "sameAs": "https://github.com/Fallstop",
-    //       "worksFor": {
-    //         "@type": "Organization",
-    //         "name": "Questionable Research Labs"
-    //       }  
-    //     }`
-    //   }
-    // }
     'gatsby-plugin-next-seo',
   ],
   pathPrefix: "/",
