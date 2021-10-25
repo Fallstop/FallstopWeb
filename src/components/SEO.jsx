@@ -24,15 +24,7 @@ export function SearchEngineOptimization (props) {
             lastName: 'Miller-Waugh',
             username: 'fallstop',
             gender: 'male',
-          },
-          images: [
-            {
-              url: 'https://jmw.nz/icons/icon-512x512.png',
-              width: 512,
-              height: 512,
-              alt: 'Fallstop Logo',
-            },
-          ],
+          }
         }}
       />
     </div>

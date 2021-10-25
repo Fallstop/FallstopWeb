@@ -56,6 +56,7 @@ export const pageQuery = graphql`
 				readingTime {
 					text
 				}
+				ogimage
 			}
 
 		}
