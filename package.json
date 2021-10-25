@@ -11,7 +11,8 @@
     "serve": "gatsby serve",
     "dev": "gatsby develop",
     "watch:prod": "nodemon -w ./src/ -e \"scss js jsx json md\" --exec \"yarn prod\"",
-    "build": "gatsby build",
+    "build": "yarn build:images && yarn build:gatsby",
+    "build:gatsby": "gatsby build",
     "build:images": "node ./openGraph/build.mjs",
     "build:images:watch": "nodemon -w ./openGraph/ ./openGraph/build.mjs"
   },
