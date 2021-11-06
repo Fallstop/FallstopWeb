@@ -3,6 +3,8 @@ import matter from'gray-matter';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import generateOpenGraphImage from "./generateImage.mjs"
+import cliProgress from 'cli-progress';
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 
@@ -34,20 +36,25 @@ function openGraphImage(src, dest) {
 
     // check if destination directory exists
     if (!fs.existsSync(imagePath)) {
-        console.log("generating dir",imagePath)
         fs.mkdirSync(imagePath);
     }
 
+
+    const postProgressBar = new cliProgress.SingleBar({}, cliProgress.Presets.shades_classic);
+
+    // start the progress bar with a total value of 200 and start value of 0
+
     const files = getMDFiles(srcDir);
-    console.log(files)
-    files.map(([fullPath,fileName]) => {
+    postProgressBar.start(files.length, 0);
+
+    files.map(([fullPath,fileName],i) => {
+            postProgressBar.update(i+1)
             // Strips MD extension
             const post = fileName
                 .split('.')
                 .slice(0, -1)
                 .join('.');
             const image = path.join(imagePath, post) + '.jpg';
-            console.log("image:",image)
             // check if the image file already exists
             // if (fs.existsSync(image)) {
             //     console.log("Not regenerating, file already exists")
@@ -58,19 +65,18 @@ function openGraphImage(src, dest) {
 
             // check frontmatter title
             if (!markdown.data.hasOwnProperty('title')) {
-                console.log("No Title")
+                console.log(fileName,"has no title, skipping")
                 return;
             }
             if (!markdown.data.hasOwnProperty('date')) {
-                console.log("No Date")
+                console.log(fileName,"has no date, skipping")
                 return;
             }
-
-            process.stdout.write(`Generating open graph image for: ${image}\n`);
-
             // fetch a new banner image
             generateOpenGraphImage(image, markdown.data.title, markdown.data.date);
-        });
+        }
+    );
+    postProgressBar.stop();
 };
 
 openGraphImage('./content/projects', './static/ogimages');

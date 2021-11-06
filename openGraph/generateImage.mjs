@@ -76,7 +76,6 @@ export default async function generateOpenGraphImage (dest, title, date) {
 		context.fillText(subtitle, padding, height - padding);
 
 		const buffer = canvas.toBuffer('image/jpeg', { quality: 1 });
-		console.log("Finished Gen")
 		fs.writeFileSync(dest, buffer);
 	};
 	
