@@ -66,6 +66,7 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-reading-time`,
+          `gatsby-remark-external-links`,
           {
             resolve: `gatsby-remark-highlight-code`,
             options: {
@@ -82,6 +83,8 @@ module.exports = {
               maxWidth: 650,
               backgroundColor: "transparent",
               withWebp: true,
+              withAvif: true,
+              disableBgImageOnAlpha: true,
             }
           }
         ]

@@ -27,26 +27,25 @@
         color: $link-color;
     }
     p {
-        margin-bottom: 0.75rem;
+        margin-top: 0.75rem;
     }
     ul {
-        // list-style: disc outside none;
-        padding-left: 40px;
+        padding-left: 1.5em;
 
         li {
             display: list-item;
-            list-style: disc;
+            list-style: ' - ';
             overflow-x: initial;
         }
     }
     ol {
-        // list-style: disc outside none;
-        padding-left: 40px;
+        padding-left: 1.5em;
 
         li {
             display: list-item;
             list-style-type: lower-alpha;
             overflow-x: initial;
+
         }
     }
     deckgo-highlight-code {
