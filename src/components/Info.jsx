@@ -100,7 +100,7 @@ const AboutMe = () => {
 				<h3 className="aboutPersonalHeader">Confirmed Bot</h3>
 				<div className="aboutPersonalSubheader">I am a software developer/stack overflow expert that likes to experiment in new technologies.</div>
 
-				I am currently studying in Huanui Collage (Y11) and contract part time for website design/various other things. I am also a full time
+				I am currently studying in Huanui Collage (Y12) and contract part time for website design/various other things. I am also a full time
 				member of <a href="https://questionable.org.nz" style={{ color: "#007acc" }} target="__none">Questionable Research Labs</a>,
 				and you might also find many of my projects are supported by them and their members.
 				<br /><br />
