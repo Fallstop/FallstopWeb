@@ -7,14 +7,14 @@ description: "React library to scan user-uploaded PDF's locally for QR codes."
 **Automatically extracting info from certificates**
 
 #### Links
- - Github: [Fallstop/react-pdf-image-qr-scanner](https://github.com/Fallstop/react-pdf-image-qr-scanner)
- - NPM: [react-pdf-image-qr-scanner](https://www.npmjs.com/package/react-pdf-image-qr-scanner)
- - Demo: [Demo](https://react-pdf-qr-scanner.pages.dev/)
- - Sample PDFs: [Demo](https://github.com/openhealthnz-credentials/physioboard-apc-reader/tree/main/samples)
+ - Github: [openhealthnz-credentials/physioboard-apc-reader](https://github.com/openhealthnz-credentials/physioboard-apc-reader)
+ - NPM: [physioboard-apc-reader](https://www.npmjs.com/package/@openhealthnz-credentials/physioboard-apc-reader)
+ - Demo: [Svelte Demo](https://physioboard-apc-reader.pages.dev/) ([server source](https://github.com/openhealthnz-credentials/physioboard-apc-reader/blob/main/lambda-service/index.js)) ([client source](https://github.com/openhealthnz-credentials/physioboard-apc-reader/tree/main/demo-site))
+ - [Sample PDFs](https://github.com/openhealthnz-credentials/physioboard-apc-reader/tree/main/samples)
  - Sponsor: [Provida](https://www.provida.nz/)
 
 
-At it's core, it's a typescript library that can read selected fields from the Annual Practicing Certificate (PDF document) issued by the Physiotherapy Board.
+At it's core, it's a typescript library that can read selected fields from the Annual Practising Certificate (PDF document) issued by the Physiotherapy Board. This is a tiny library, but this parser is a proof of concept for a future library that would have wide support for many different medical certificates.
 
 ### Physiotherapy Board APC Analysis
 
@@ -63,13 +63,3 @@ Only on Tuesdays
 ```
 
 From here it's pretty simple to use regex to parse and validate the data, as done in [this function](https://github.com/openhealthnz-credentials/physioboard-apc-reader/blob/ea4a3075abb0e3bec86f060d79d90f0d8ebfe7e2/src/certProfiles/physioboardAPC.ts#L16).
-
-<br/>
-<br/>
-<h3 align="center">
-	Supported By
-</h3>
-<div style="width: 300px; margin-left: auto; margin-right: auto">
-
-![Provida](./ProvidaKeaLogo.png)
-</div>
