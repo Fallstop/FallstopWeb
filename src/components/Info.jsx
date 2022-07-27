@@ -8,7 +8,7 @@ const ProjectArchiveButton = (props) => {
 	console.log('Project Count Query', props.ProjectCountQuery);
 	if (props.ProjectCountQuery > 6) {
 		return <div className="projectSeeMore">
-			<Link to="/archive" about="Go to the Project Archive Page">
+			<Link to="/archive#archiveOlderPostsLine" about="Go to the Project Archive Page">
 				{props.ProjectCountQuery - 6} More Project{(props.ProjectCountQuery > 7) ? "s" : ""}
 			</Link>
 		</div>;

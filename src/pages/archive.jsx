@@ -29,7 +29,7 @@ export default function Home({ data, }) {
 			}
 		`);
 	let projectElements = [];
-	projectList.allMarkdownRemark.edges.forEach(({ node }) => {
+	for (const [i,{ node }] of projectList.allMarkdownRemark.edges.entries()) {
 		projectElements.push(
 			<Link to={node.frontmatter.slug} key={node.frontmatter.slug}>
 				<article className="projectBox" >
@@ -39,7 +39,16 @@ export default function Home({ data, }) {
 				</article>
 			</Link>
 		);
-	});
+		if (i===6) {
+			// now onto ones that aren't listed on front page
+			projectElements.push(
+					<div className="archiveSeparator">
+						<span id="archiveOlderPostsLine">Historic Projects</span>
+						<hr />
+					</div>
+			)
+		}
+	}
 	return (
 		<>
 			<SearchEngineOptimization titleExt="Archive" description="Jasper Miller-Waugh's archive of past projects." />
